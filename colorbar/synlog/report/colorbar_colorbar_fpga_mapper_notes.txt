@@ -1,0 +1,27 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MO111 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":63:11:63:14|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO106 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Found ROM addr_reg_H_1[4:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) with 12 words by 5 bits.
+@N: MO106 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Found ROM data_wr_H_1[7:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) with 12 words by 8 bits.
+@N: MF237 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1247:30:1247:46|Generating a type rem remainder 
+@N: MO231 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1219:4:1219:9|Found counter in view:work.top(verilog) instance u_colorbar_gen.color_cntr[11:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Found counter in view:work.top(verilog) instance u_colorbar_gen.rstn_cnt[7:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1629:4:1629:9|Found counter in view:work.hdmi_i2c_core_uniq_1(verilog) instance cnt_1bit[7:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1547:4:1547:9|Found counter in view:work.hdmi_i2c_core_uniq_1(verilog) instance cnt_bit[3:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1651:4:1651:9|Found counter in view:work.hdmi_i2c_core_uniq_1(verilog) instance cnt_128u[13:0] 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":63:11:63:14|Tristate driver test_obuft.un1[0] (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[0] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[1] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[2] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[3] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[4] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[5] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1152:4:1152:9|Removing sequential instance u_colorbar_gen.rstn_cnt[6] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

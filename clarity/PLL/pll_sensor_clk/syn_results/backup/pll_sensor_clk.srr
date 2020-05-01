@@ -1,0 +1,524 @@
+#Build: Synplify Pro (R) N-2018.03L-SP1-1, Build 443R, Apr  1 2019
+#install: /opt/lscc/diamond/3.11_x64/synpbase
+#OS: Linux 
+#Hostname: debian-dell
+
+# Fri Apr 24 14:43:27 2020
+
+#Implementation: syn_results
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : syn_results
+Synopsys HDL Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : syn_results
+Synopsys Verilog Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v" (library work)
+@I::"/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v" (library work)
+Verilog syntax check successful!
+Selecting top level module pll_sensor_clk
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":758:10:758:10|*Output Z has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":762:10:762:10|*Output Z has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:7:1700:11|*Output CLKOP has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:13:1700:17|*Output CLKOS has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:19:1700:24|*Output CLKOS2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:26:1700:31|*Output CLKOS3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:33:1700:36|*Output LOCK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:38:1700:44|*Output INTLOCK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1701:7:1701:12|*Output REFCLK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1701:15:1701:22|*Output CLKINTFB has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":8:7:8:20|Synthesizing module pll_sensor_clk in library work.
+Running optimization stage 1 on pll_sensor_clk .......
+@W: CL168 :"/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":20:8:20:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Running optimization stage 2 on pll_sensor_clk .......
+Running optimization stage 2 on EHXPLLL .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Apr 24 14:43:28 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : syn_results
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Apr 24 14:43:28 2020
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/pll_sensor_clk_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Apr 24 14:43:28 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Database state : /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/|syn_results
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 67MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Apr 24 14:43:29 2020
+
+###########################################################]
+Premap Report
+
+# Fri Apr 24 14:43:29 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : syn_results
+Synopsys Lattice Technology Pre-mapping, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:24:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/pll_sensor_clk_scck.rpt 
+Printing clock  summary report in "/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/pll_sensor_clk_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+syn_allowed_resources : blockrams=56  set on top level netlist pll_sensor_clk
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+
+Clock Summary
+******************
+
+          Start      Requested     Requested     Clock      Clock               Clock
+Level     Clock      Frequency     Period        Type       Group               Load 
+-------------------------------------------------------------------------------------
+0 -       System     100.0 MHz     10.000        system     system_clkgroup     0    
+=====================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+           Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock      Load      Pin        Seq Example     Seq Example       Comb Example 
+-------------------------------------------------------------------------------
+System     0         -          -               -                 -            
+===============================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 24 14:43:29 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Fri Apr 24 14:43:30 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : syn_results
+Synopsys Lattice Technology Mapper, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:24:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 142MB)
+
+Writing Analyst data base /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/pll_sensor_clk_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 142MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/pll_sensor_clk.edn
+N-2018.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+Writing Verilog Simulation files
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+Writing VHDL Simulation files
+
+Finished Writing VHDL Simulation files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+@W: MT246 :"/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":56:12:56:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Apr 24 14:43:30 2020
+#
+
+
+Top view:               pll_sensor_clk
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 10.000
+
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+                   Requested     Estimated     Requested     Estimated                Clock      Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type       Group          
+----------------------------------------------------------------------------------------------------------------
+System             100.0 MHz     NA            10.000        0.000         10.000     system     system_clkgroup
+================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System  |  10.000      10.000  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                      Arrival           
+Instance      Reference     Type        Pin       Net       Time        Slack 
+              Clock                                                           
+------------------------------------------------------------------------------
+PLLInst_0     System        EHXPLLL     CLKOP     CLKOP     0.000       10.000
+==============================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                      Required           
+Instance      Reference     Type        Pin       Net       Time         Slack 
+              Clock                                                            
+-------------------------------------------------------------------------------
+PLLInst_0     System        EHXPLLL     CLKFB     CLKOP     10.000       10.000
+===============================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      0.000
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     10.000
+
+    Number of logic level(s):                0
+    Starting point:                          PLLInst_0 / CLKOP
+    Ending point:                            PLLInst_0 / CLKFB
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                 Pin       Pin               Arrival     No. of    
+Name               Type        Name      Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+PLLInst_0          EHXPLLL     CLKOP     Out     0.000     0.000       -         
+CLKOP              Net         -         -       -         -           2         
+PLLInst_0          EHXPLLL     CLKFB     In      0.000     0.000       -         
+=================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfe5um_25f-6
+
+Register bits: 0 of 24288 (0%)
+PIC Latch:       0
+I/O cells:       0
+
+
+Details:
+GSR:            1
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 146MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 24 14:43:31 2020
+
+###########################################################]

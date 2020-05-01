@@ -1,0 +1,19 @@
+#Start recording tcl command: 4/26/2020 12:26:37
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run PAR -impl colorbar -task PARTrace
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Map -impl colorbar
+prj_run PAR -impl colorbar -task PARTrace
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_project save
+prj_project close
+#Stop recording: 4/26/2020 13:36:40

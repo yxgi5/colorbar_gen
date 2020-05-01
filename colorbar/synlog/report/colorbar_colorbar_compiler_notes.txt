@@ -1,0 +1,25 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1069:7:1069:27|Synthesizing module pll_sensor_clk_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1130:7:1130:25|Synthesizing module colorbar_gen_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1308:7:1308:26|Synthesizing module hdmi_i2c_ctrl_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1477:7:1477:26|Synthesizing module hdmi_i2c_core_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1273:7:1273:25|Synthesizing module hdmi_i2c_top_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":53:7:53:9|Synthesizing module top in library work.
+@N: CL189 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":76:4:76:9|Register bit reset_n is always 1.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":55:7:55:13|Input reset_n is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":68:7:68:16|Input trigger_en is unused.
+@N: CL201 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1784:4:1784:9|Trying to extract state machine for register i2c_cs.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1486:21:1486:30|Input addr_reg_L is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1488:21:1488:29|Input data_wr_L is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1318:15:1318:22|Input data_rdy is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1319:21:1319:27|Input data_rd is unused.
+@N|Running in 64-bit mode
+

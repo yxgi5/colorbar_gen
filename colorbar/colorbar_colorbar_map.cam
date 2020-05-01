@@ -1,0 +1,258 @@
+[ START MERGED ]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jshift_d2.CN jtaghub16_jtck
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_i jtaghub16_jrstn
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/jshift_d2.CN jtaghub16_jtck
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/jrstn_i jtaghub16_jrstn
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/dec0_wre3 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/tt_wr_en
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/dec0_wre3 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/tt_wr_en
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/jshift_d2.CN jtaghub16_jtck
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/jrstn_i jtaghub16_jrstn
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/r_w.CN jtaghub16_jtck
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jrstn_i jtaghub16_jrstn
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/reset_n_i top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/jtck_i jtaghub16_jtck
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/jrstn_i jtaghub16_jrstn
+sa5phub/cdn.CN jtaghub16_jtck
+sa5phub/jrstn_i jtaghub16_jrstn
+sa5phub/jtdo2_int_bm_RNO_2 sa5phub/ip_enable[5]
+[ END MERGED ]
+[ START CLIPPED ]
+sa5phub/ip_enable[14]
+sa5phub/ip_enable[13]
+sa5phub/ip_enable[12]
+sa5phub/jtdo2_int_m5_bm
+sa5phub/VCC
+sa5phub/jtdo2_int_m0
+sa5phub/jtdo2_int_m1
+sa5phub/jtdo2_int_m4
+sa5phub/jtdo2_int_m7
+sa5phub/jtdo2_int_bm_RNO_1
+GND
+VCC
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vlo
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/scuba_vhi
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/scuba_vhi
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_te[1]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vlo
+u_colorbar_gen/VCC
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/VCC
+sa5phub/rom_rd_addr_cry_0_S0[0]
+sa5phub/N_1
+sa5phub/bit_count_cry_0_COUT[3]
+sa5phub/bit_count_cry_0_S0[0]
+sa5phub/N_2
+sa5phub/er2_tdo[15]
+sa5phub/er2_tdo[14]
+sa5phub/er2_tdo[13]
+sa5phub/er2_tdo[12]
+sa5phub/er2_tdo[10]
+sa5phub/er2_tdo[9]
+sa5phub/er2_tdo[7]
+sa5phub/er2_tdo[6]
+sa5phub/er2_tdo[1]
+sa5phub/er2_tdo[11]
+sa5phub/er2_tdo[4]
+sa5phub/er2_tdo[3]
+sa5phub/er2_tdo[5]
+sa5phub/er2_tdo[2]
+sa5phub/er2_tdo[8]
+sa5phub/ip_enable[15]
+sa5phub/genblk8.un1_jtagg_u
+sa5phub/genblk8.un1_jtagg_u_1
+sa5phub/tdoa
+sa5phub/tdia
+sa5phub/tmsa
+sa5phub/tcka
+sa5phub/cdn
+sa5phub/rom_rd_addr_s_0_S1[7]
+sa5phub/rom_rd_addr_s_0_COUT[7]
+top_reveal_coretop_instance/top_la0_inst_0/GND
+top_reveal_coretop_instance/top_la0_inst_0/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trace_dout_1st_bit
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_COUT[9]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_1
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_COUT[9]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/pre_trig_cntr_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_2
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_COUT[9]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_3
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_COUT[9]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_4
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/scuba_vhi
+top_reveal_coretop_instance/top_la0_inst_0/ren_jtck
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_S1[5]
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_s_0_COUT[5]
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/N_1
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_te[2]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/te_precnt_s_0_S1[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/te_precnt_s_0_COUT[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/te_precnt_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/N_1
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0/DO2
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0/DO3
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_te_0[2]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0/DO2
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0/DO3
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/te_precnt_s_0_S1[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/te_precnt_s_0_COUT[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/te_precnt_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/N_1
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_S1[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_s_0_COUT[15]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_cry_0_S0[0]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/N_1
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/scuba_vhi
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_0[3]
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_1[3]
+u_pll_sensor_clk/CLKINTFB
+u_pll_sensor_clk/REFCLK
+u_pll_sensor_clk/INTLOCK
+u_pll_sensor_clk/LOCK
+u_pll_sensor_clk/CLKOS3
+u_pll_sensor_clk/CLKOS2
+u_pll_sensor_clk/CLKOS
+u_colorbar_gen/un2_linecnt_cry_0_0_S0
+u_colorbar_gen/N_1
+u_colorbar_gen/un7_pixcnt_s_11_0_S1
+u_colorbar_gen/un7_pixcnt_s_11_0_COUT
+u_colorbar_gen/un7_pixcnt_cry_0_0_S1
+u_colorbar_gen/un7_pixcnt_cry_0_0_S0
+u_colorbar_gen/N_3
+u_colorbar_gen/mult1_un75_sum_s_10_0_S1
+u_colorbar_gen/mult1_un75_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un75_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un75_sum_cry_5_0_S0
+u_colorbar_gen/N_5
+u_colorbar_gen/mult1_un82_sum_s_10_0_S1
+u_colorbar_gen/mult1_un82_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un82_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un82_sum_cry_5_0_S0
+u_colorbar_gen/N_6
+u_colorbar_gen/mult1_un89_sum_s_10_0_S1
+u_colorbar_gen/mult1_un89_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un89_sum_cry_8_0_S1
+u_colorbar_gen/mult1_un89_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un89_sum_cry_5_0_S0
+u_colorbar_gen/N_7
+u_colorbar_gen/mult1_un54_sum_s_10_0_S1
+u_colorbar_gen/mult1_un54_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un54_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un54_sum_cry_5_0_S0
+u_colorbar_gen/N_8
+u_colorbar_gen/mult1_un61_sum_s_10_0_S1
+u_colorbar_gen/mult1_un61_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un61_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un61_sum_cry_5_0_S0
+u_colorbar_gen/N_9
+u_colorbar_gen/mult1_un68_sum_s_10_0_S1
+u_colorbar_gen/mult1_un68_sum_s_10_0_COUT
+u_colorbar_gen/mult1_un68_sum_cry_5_0_S1
+u_colorbar_gen/mult1_un68_sum_cry_5_0_S0
+u_colorbar_gen/N_10
+u_colorbar_gen/color_cntr_s_0_S1[11]
+u_colorbar_gen/color_cntr_s_0_COUT[11]
+u_colorbar_gen/color_cntr_cry_0_S0[0]
+u_colorbar_gen/N_11
+u_colorbar_gen/rstn_cnt_s_0_S1[7]
+u_colorbar_gen/rstn_cnt_s[7]
+u_colorbar_gen/rstn_cnt_s_0_COUT[7]
+u_colorbar_gen/rstn_cnt_s[6]
+u_colorbar_gen/rstn_cnt_s[5]
+u_colorbar_gen/rstn_cnt_cry[6]
+u_colorbar_gen/rstn_cnt_s[4]
+u_colorbar_gen/rstn_cnt_s[3]
+u_colorbar_gen/rstn_cnt_cry[4]
+u_colorbar_gen/rstn_cnt_s[2]
+u_colorbar_gen/rstn_cnt_s[1]
+u_colorbar_gen/rstn_cnt_cry[2]
+u_colorbar_gen/rstn_cnt_s[0]
+u_colorbar_gen/rstn_cnt_cry_0_S0[0]
+u_colorbar_gen/rstn_cnt_cry[0]
+u_colorbar_gen/N_12
+u_colorbar_gen/un2_linecnt_cry_9_0_COUT
+hdmi_i2c_top_inst/GND
+hdmi_i2c_top_inst/VCC
+hdmi_i2c_top_inst/config_done
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_1bit_s_0_S1[7]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_1bit_s_0_COUT[7]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_1bit_cry_0_S0[0]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_1
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_128u_s_0_S1[13]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_128u_s_0_COUT[13]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/cnt_128u_cry_0_S0[0]
+hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_2
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.11.0.396.4 -- WARNING: Map write only section -- Sun Apr 26 13:20:42 2020
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
+LOCATE COMP "pixdata[0]" SITE "T31" ;
+LOCATE COMP "clk_in" SITE "E17" ;
+LOCATE COMP "HDMI_sda" SITE "AJ1" ;
+LOCATE COMP "HDMI_scl" SITE "AG1" ;
+LOCATE COMP "de" SITE "C25" ;
+LOCATE COMP "pixclk" SITE "E25" ;
+LOCATE COMP "lv" SITE "D25" ;
+LOCATE COMP "fv" SITE "A25" ;
+LOCATE COMP "pixdata[35]" SITE "F17" ;
+LOCATE COMP "pixdata[34]" SITE "F25" ;
+LOCATE COMP "pixdata[33]" SITE "W28" ;
+LOCATE COMP "pixdata[32]" SITE "D24" ;
+LOCATE COMP "pixdata[31]" SITE "Y27" ;
+LOCATE COMP "pixdata[30]" SITE "AC26" ;
+LOCATE COMP "pixdata[29]" SITE "AB27" ;
+LOCATE COMP "pixdata[28]" SITE "AB28" ;
+LOCATE COMP "pixdata[27]" SITE "AB30" ;
+LOCATE COMP "pixdata[26]" SITE "AB29" ;
+LOCATE COMP "pixdata[25]" SITE "AD27" ;
+LOCATE COMP "pixdata[24]" SITE "AE27" ;
+LOCATE COMP "pixdata[23]" SITE "T30" ;
+LOCATE COMP "pixdata[22]" SITE "W30" ;
+LOCATE COMP "pixdata[21]" SITE "Y26" ;
+LOCATE COMP "pixdata[20]" SITE "W32" ;
+LOCATE COMP "pixdata[19]" SITE "V32" ;
+LOCATE COMP "pixdata[18]" SITE "AB31" ;
+LOCATE COMP "pixdata[17]" SITE "AC30" ;
+LOCATE COMP "pixdata[16]" SITE "T32" ;
+LOCATE COMP "pixdata[15]" SITE "A24" ;
+LOCATE COMP "pixdata[14]" SITE "R26" ;
+LOCATE COMP "pixdata[13]" SITE "T26" ;
+LOCATE COMP "pixdata[12]" SITE "AD26" ;
+LOCATE COMP "pixdata[11]" SITE "AD32" ;
+LOCATE COMP "pixdata[10]" SITE "AC32" ;
+LOCATE COMP "pixdata[9]" SITE "AB32" ;
+LOCATE COMP "pixdata[8]" SITE "AC31" ;
+LOCATE COMP "pixdata[7]" SITE "V26" ;
+LOCATE COMP "pixdata[6]" SITE "V27" ;
+LOCATE COMP "pixdata[5]" SITE "U28" ;
+LOCATE COMP "pixdata[4]" SITE "T29" ;
+LOCATE COMP "pixdata[3]" SITE "W31" ;
+LOCATE COMP "pixdata[2]" SITE "Y32" ;
+LOCATE COMP "pixdata[1]" SITE "R32" ;
+FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+FREQUENCY NET "u_pll_sensor_clk/GND" 27.000000 MHz ;
+USE PRIMARY NET "w_pixclk" ;
+FREQUENCY PORT "clk_in" 27.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

@@ -1,0 +1,79 @@
+Running in Lattice mode
+
+Starting:    /opt/lscc/diamond/3.11_x64/synpbase/linux_a_64/mbin/synbatch
+Install:     /opt/lscc/diamond/3.11_x64/synpbase
+Hostname:    debian-dell
+Date:        Sun Apr 26 12:42:58 2020
+Version:     N-2018.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch colorbar_colorbar_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srr"
+Running: colorbar in foreground
+
+Running proj_1|colorbar
+
+Running Flow: compile (Compile) on proj_1|colorbar
+# Sun Apr 26 12:42:58 2020
+
+Running Flow: compile_flow (Compile Process) on proj_1|colorbar
+# Sun Apr 26 12:42:58 2020
+
+Running: compiler (Compile Input) on proj_1|colorbar
+# Sun Apr 26 12:42:58 2020
+Copied /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_comp.srs to /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srs
+
+compiler completed
+# Sun Apr 26 12:43:00 2020
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|colorbar
+# Sun Apr 26 12:43:00 2020
+
+multi_srs_gen completed
+# Sun Apr 26 12:43:00 2020
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_mult.srs to /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srs
+Copied /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srr to /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srf
+Complete: Compile Process on proj_1|colorbar
+
+Running: premap (Premap) on proj_1|colorbar
+# Sun Apr 26 12:43:00 2020
+
+premap completed with warnings
+# Sun Apr 26 12:43:01 2020
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on proj_1|colorbar
+
+Running Flow: map (Map) on proj_1|colorbar
+# Sun Apr 26 12:43:01 2020
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|colorbar
+# Sun Apr 26 12:43:01 2020
+Copied /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_m.srm to /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srm
+
+fpga_mapper completed with warnings
+# Sun Apr 26 12:43:05 2020
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Map on proj_1|colorbar
+Copied /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srr to /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar.srf
+Complete: Logic Synthesis on proj_1|colorbar
+TCL script complete: "colorbar_colorbar_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+/home/andy/Downloads/tmp/colorbar_gen/colorbar/proj_1.prj
+batch mode default:no

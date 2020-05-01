@@ -1,0 +1,40 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LFE5UM-85F-8BG756C
+family = ECP5UM
+device = LFE5UM-85F
+speed = 8
+package = CABGA756
+operation = Commercial
+
+#design options
+[Design]
+title = colorbar
+path = /home/andy/Downloads/tmp/colorbar_gen/colorbar
+core_generate = /home/andy/Downloads/tmp/colorbar_gen/colorbar
+search_path = /home/andy/Downloads/tmp/colorbar_gen
+top = top
+lpf = /home/andy/Downloads/tmp/colorbar_gen/colorbar.lpf
+synthesis = synplify
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+/home/andy/Downloads/tmp/colorbar_gen/top.v = Verilog
+/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v = Verilog
+/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v = Verilog
+/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_top.v = Verilog
+/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v = Verilog
+/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_core.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
+/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
+/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work

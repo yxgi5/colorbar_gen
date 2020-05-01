@@ -1,0 +1,163 @@
+# Sun Apr 26 13:20:35 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys Lattice Technology Pre-mapping, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:24:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: /home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar_scck.rpt 
+Printing clock  summary report in "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MO111 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":63:11:63:14|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Removing sequential instance fv (in view: work.colorbar_gen_uniq_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine i2c_cs[11:0] (in view: work.hdmi_i2c_core_uniq_1(verilog))
+original code -> new code
+   000001 -> 0000
+   000010 -> 0001
+   000011 -> 0010
+   000100 -> 0011
+   000101 -> 0100
+   000110 -> 0101
+   001001 -> 0110
+   001010 -> 0111
+   010111 -> 1000
+   011000 -> 1001
+   011001 -> 1010
+   011010 -> 1011
+Encoding state machine next_then_shift[2:0] (in view: work.rvl_te_Z3_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine next_then_shift[2:0] (in view: work.rvl_te_Z3_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+syn_allowed_resources : blockrams=208  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                          Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                          Frequency     Period        Type         Group                   Load 
+-------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                         100.0 MHz     10.000        system       system_clkgroup         24   
+                                                                                                                               
+0 -       pll_sensor_clk_uniq_1|CLKOP_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     318  
+                                                                                                                               
+0 -       reveal_coretop|jtck_inferred_clock[0]          100.0 MHz     10.000        inferred     Inferred_clkgroup_1     231  
+                                                                                                                               
+0 -       top|clk_in                                     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     61   
+===============================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                               Clock     Source                                                             Clock Pin                                                            Non-clock Pin                                                               Non-clock Pin                                                              
+Clock                                          Load      Pin                                                                Seq Example                                                          Seq Example                                                                 Comb Example                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                         24        -                                                                  hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.cmd.C                           -                                                                           -                                                                          
+                                                                                                                                                                                                                                                                                                                                                        
+pll_sensor_clk_uniq_1|CLKOP_inferred_clock     318       u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLL)                          fv.C                                                                 top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_din_d[12:0].D[12]     w_pixclk.I[0](keepbuf)                                                     
+                                                                                                                                                                                                                                                                                                                                                        
+reveal_coretop|jtck_inferred_clock[0]          231       top_reveal_coretop_instance.jtagconn16_inst_0.jtck(jtagconn16)     top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_first_rd_d1.C     -                                                                           top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.un1_jtck.I[0](inv)
+                                                                                                                                                                                                                                                                                                                                                        
+top|clk_in                                     61        clk_in(port)                                                       hdmi_i2c_top_inst.hdmi_i2c_core_inst.scl_s2.C                        -                                                                           -                                                                          
+========================================================================================================================================================================================================================================================================================================================================================
+
+@W: MT531 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Found signal identified as System clock which controls 24 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Found inferred clock pll_sensor_clk_uniq_1|CLKOP_inferred_clock which controls 318 sequential elements including u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1332:4:1332:9|Found inferred clock top|clk_in which controls 61 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 61 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 560 clock pin(s) of sequential element(s)
+0 instances converted, 560 sequential instances remain driven by gated/generated clocks
+
+=========================================== Non-Gated/Non-Generated Clocks ===========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                               
+----------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_3       clk_in              Unconstrained_port     61         hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3]
+======================================================================================================================
+============================================================================================== Gated/Generated Clocks ==============================================================================================
+Clock Tree ID     Driving Element                                              Drive Element Type        Unconverted Fanout     Sample Instance                                      Explanation                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       u_pll_sensor_clk.CLKOP                                       pll_sensor_clk_uniq_1     305                    pixdata[35:0]                                        Black box on clock path        
+@KP:ckid0_2       top_reveal_coretop_instance.jtagconn16_inst_0.jtck           jtagconn16                231                    ENCRYPTED                                            Black box on clock path        
+@KP:ckid0_4       hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT     or                        24                     hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6]     Clock source is invalid for GCC
+====================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Apr 26 13:20:36 2020
+
+###########################################################]

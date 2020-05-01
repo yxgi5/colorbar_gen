@@ -1,0 +1,41 @@
+FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+FREQUENCY NET "u_pll_sensor_clk/GND" 27.000000 MHz ;
+FREQUENCY PORT "clk_in" 27.000000 MHz ;
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+DEFINE PORT GROUP "vout" "pixdata[23]" 
+"pixdata[22]" 
+"pixdata[21]" 
+"pixdata[20]" 
+"pixdata[19]" 
+"pixdata[18]" 
+"pixdata[17]" 
+"pixdata[16]" 
+"pixdata[15]" 
+"pixdata[14]" 
+"pixdata[13]" 
+"pixdata[12]" 
+"pixdata[11]" 
+"pixdata[10]" 
+"pixdata[9]" 
+"pixdata[8]" 
+"pixdata[7]" 
+"pixdata[6]" 
+"pixdata[5]" 
+"pixdata[4]" 
+"pixdata[3]" 
+"pixdata[2]" 
+"pixdata[1]" 
+"pixdata[0]" 
+"fv" 
+"lv" 
+"de" ;

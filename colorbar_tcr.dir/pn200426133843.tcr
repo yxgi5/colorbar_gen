@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/26/2020 13:38:21
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_project close
+#Stop recording: 4/26/2020 13:38:43

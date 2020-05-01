@@ -1,0 +1,48 @@
+
+fsm_encoding {131784417842} sequential
+
+fsm_state_encoding {131784417842} 000001 {0000}
+
+fsm_state_encoding {131784417842} 000010 {0001}
+
+fsm_state_encoding {131784417842} 000011 {0010}
+
+fsm_state_encoding {131784417842} 000100 {0011}
+
+fsm_state_encoding {131784417842} 000101 {0100}
+
+fsm_state_encoding {131784417842} 000110 {0101}
+
+fsm_state_encoding {131784417842} 001001 {0110}
+
+fsm_state_encoding {131784417842} 001010 {0111}
+
+fsm_state_encoding {131784417842} 010111 {1000}
+
+fsm_state_encoding {131784417842} 011000 {1001}
+
+fsm_state_encoding {131784417842} 011001 {1010}
+
+fsm_state_encoding {131784417842} 011010 {1011}
+
+fsm_registers {131784417842} {i2c_cs[3]}  {i2c_cs[2]}  {i2c_cs[1]}  {i2c_cs[0]} 
+
+fsm_encoding {71040010401} sequential
+
+fsm_state_encoding {71040010401} 00 {00}
+
+fsm_state_encoding {71040010401} 01 {01}
+
+fsm_state_encoding {71040010401} 10 {10}
+
+fsm_registers {71040010401} {next_then_shift[1]}  {next_then_shift[0]} 
+
+fsm_encoding {71040010401} sequential
+
+fsm_state_encoding {71040010401} 00 {00}
+
+fsm_state_encoding {71040010401} 01 {01}
+
+fsm_state_encoding {71040010401} 10 {10}
+
+fsm_registers {71040010401} {next_then_shift[1]}  {next_then_shift[0]} 

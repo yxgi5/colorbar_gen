@@ -1,0 +1,8 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":8:7:8:20|Synthesizing module pll_sensor_clk in library work.
+@N|Running in 64-bit mode
+

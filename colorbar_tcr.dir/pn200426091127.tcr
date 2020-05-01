@@ -1,0 +1,10 @@
+#Start recording tcl command: 4/26/2020 08:39:57
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_run Export -impl colorbar -task Bitgen
+prj_strgy set_value -strategy Strategy1 map_pack_logic_blk_util=
+prj_strgy set_value -strategy Strategy1 par_cdp=Auto par_cdr=1
+prj_run Export -impl colorbar -task Bitgen
+prj_project save
+prj_project close
+#Stop recording: 4/26/2020 09:11:27

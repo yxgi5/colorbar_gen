@@ -1,0 +1,18 @@
+all messages logged in file /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_error.log
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_reveal_coretop.v (VERI-1482)
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/top.v (VERI-1482)
+WARNING - /home/andy/Downloads/tmp/colorbar_gen/top.v(22): redeclaration of ansi port de is not allowed. VERI-1372
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v (VERI-1482)
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v (VERI-1482)
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_top.v (VERI-1482)
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v (VERI-1482)
+Analyzing Verilog file /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_core.v (VERI-1482)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/top.v(1): compiling module top (VERI-1018)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/top.v(94): elaborating module 'top' (VERI-9000)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v(80): elaborating module 'pll_sensor_clk_uniq_1' (VERI-9000)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v(160): elaborating module 'colorbar_gen_uniq_1' (VERI-9000)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_top.v(67): elaborating module 'hdmi_i2c_top_uniq_1' (VERI-9000)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v(96): elaborating module 'hdmi_i2c_ctrl_uniq_1' (VERI-9000)
+INFO: /home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_core.v(385): elaborating module 'hdmi_i2c_core_uniq_1' (VERI-9000)
+WARNING: /home/andy/Downloads/tmp/colorbar_gen/top.v(42): port CLKOS remains unconnected for this instance
+Pretty printing all modules in library work to file /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v (VERI-1491)

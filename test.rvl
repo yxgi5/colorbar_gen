@@ -1,0 +1,41 @@
+<Project ModBy="Inserter" SigType="0" Name="/home/andy/Downloads/tmp/colorbar_gen/test.rvl" Date="2020-04-24">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="ECP5UM" DesignName="colorbar"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="288423150" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="w_pixclk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="32"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="fv"/>
+                <Sig Type="SIG" Name="lv"/>
+                <Bus Name="pixdata">
+                    <Sig Type="SIG" Name="pixdata:0"/>
+                    <Sig Type="SIG" Name="pixdata:1"/>
+                    <Sig Type="SIG" Name="pixdata:2"/>
+                    <Sig Type="SIG" Name="pixdata:3"/>
+                    <Sig Type="SIG" Name="pixdata:4"/>
+                    <Sig Type="SIG" Name="pixdata:5"/>
+                    <Sig Type="SIG" Name="pixdata:6"/>
+                    <Sig Type="SIG" Name="pixdata:7"/>
+                    <Sig Type="SIG" Name="pixdata:8"/>
+                    <Sig Type="SIG" Name="pixdata:9"/>
+                </Bus>
+                <Sig Type="SIG" Name="pixclk"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="w_fv,"/>
+                <TU Serialbits="0" Type="0" ID="2" Sig="w_lv,"/>
+                <TU Serialbits="0" Type="0" ID="3" Sig="w_pixdata:9,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="2" Resource="0"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="3" Resource="0"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

@@ -1,0 +1,166 @@
+----------------------------------------------------------------------
+Report for cell top.verilog
+
+Register bits: 573 of 83640 (1%)
+PIC Latch:       0
+I/O cells:       44
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C      117       100.0
+                            EHXPLLL        1       100.0
+                            FD1P3AX       38       100.0
+                            FD1P3BX       33       100.0
+                            FD1P3DX      309       100.0
+                            FD1S3AX       94       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX       67       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                                INV       28       100.0
+                            L6MUX21        3       100.0
+                                 OB       42       100.0
+                                OBZ        1       100.0
+                           OFS1P3DX       27       100.0
+                           ORCALUT4      742       100.0
+                              PFUMX       24       100.0
+                                PUR        1       100.0
+                                VHI       18       100.0
+                                VLO       17       100.0
+                         jtagconn16        1       100.0
+SUB MODULES 
+                colorbar_gen_uniq_1        1       100.0
+               hdmi_i2c_core_uniq_1        1       100.0
+               hdmi_i2c_ctrl_uniq_1        1       100.0
+                hdmi_i2c_top_uniq_1        1       100.0
+              pll_sensor_clk_uniq_1        1       100.0
+                     reveal_coretop        1       100.0
+                            top_la0        1       100.0
+                       top_la0_trig        1       100.0
+                            
+                         TOTAL          1578           
+----------------------------------------------------------------------
+Report for cell hdmi_i2c_top_uniq_1.netlist
+     Instance path:  hdmi_i2c_top_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13        11.1
+                            FD1P3AX       20        52.6
+                            FD1S3AX       41        43.6
+                                INV        6        21.4
+                           ORCALUT4      150        20.2
+                                VHI        3        16.7
+                                VLO        2        11.8
+SUB MODULES 
+               hdmi_i2c_core_uniq_1        1       100.0
+               hdmi_i2c_ctrl_uniq_1        1       100.0
+                            
+                         TOTAL           237           
+----------------------------------------------------------------------
+Report for cell hdmi_i2c_core_uniq_1.netlist
+     Instance path:  hdmi_i2c_top_inst.hdmi_i2c_core_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13        11.1
+                            FD1P3AX       15        39.5
+                            FD1S3AX       32        34.0
+                           ORCALUT4       94        12.7
+                                VHI        1         5.6
+                            
+                         TOTAL           155           
+----------------------------------------------------------------------
+Report for cell hdmi_i2c_ctrl_uniq_1.verilog
+     Instance path:  hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX        5        13.2
+                            FD1S3AX        9         9.6
+                                INV        6        21.4
+                           ORCALUT4       56         7.5
+                                VHI        1         5.6
+                                VLO        1         5.9
+                            
+                         TOTAL            78           
+----------------------------------------------------------------------
+Report for cell colorbar_gen_uniq_1.netlist
+     Instance path:  u_colorbar_gen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       49        41.9
+                            FD1S3AX       41        43.6
+                                INV        1         3.6
+                           ORCALUT4       50         6.7
+                                VHI        1         5.6
+                            
+                         TOTAL           142           
+----------------------------------------------------------------------
+Report for cell pll_sensor_clk_uniq_1.netlist
+     Instance path:  u_pll_sensor_clk
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLL        1       100.0
+                                VLO        1         5.9
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell reveal_coretop.verilog
+     Instance path:  top_reveal_coretop_instance
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       55        47.0
+                            FD1P3AX       18        47.4
+                            FD1P3BX       33       100.0
+                            FD1P3DX      309       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX       67       100.0
+                                INV       20        71.4
+                            L6MUX21        3       100.0
+                           ORCALUT4      542        73.0
+                              PFUMX       24       100.0
+                                VHI       13        72.2
+                                VLO       13        76.5
+                         jtagconn16        1       100.0
+SUB MODULES 
+                            top_la0        1       100.0
+                       top_la0_trig        1       100.0
+                            
+                         TOTAL          1105           
+----------------------------------------------------------------------
+Report for cell top_la0.netlist
+     Instance path:  top_reveal_coretop_instance.top_la0_inst_0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       55        47.0
+                            FD1P3AX       18        47.4
+                            FD1P3BX       33       100.0
+                            FD1P3DX      309       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX       67       100.0
+                                INV       19        67.9
+                            L6MUX21        3       100.0
+                           ORCALUT4      542        73.0
+                              PFUMX       24       100.0
+                                VHI       12        66.7
+                                VLO       12        70.6
+SUB MODULES 
+                       top_la0_trig        1       100.0
+                            
+                         TOTAL          1100           
+----------------------------------------------------------------------
+Report for cell top_la0_trig.netlist
+     Instance path:  top_reveal_coretop_instance.top_la0_inst_0.trig_u
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       27        23.1
+                            FD1P3AX       16        42.1
+                            FD1P3BX        1         3.0
+                            FD1P3DX       92        29.8
+                            FD1S3BX        5       100.0
+                            FD1S3DX       41        61.2
+                                INV       13        46.4
+                            L6MUX21        3       100.0
+                           ORCALUT4      235        31.7
+                              PFUMX       13        54.2
+                                VHI        9        50.0
+                                VLO        9        52.9
+                            
+                         TOTAL           464           

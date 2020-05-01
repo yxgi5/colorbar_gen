@@ -1,0 +1,1 @@
+-link -encrypt -top pll_sensor_clk -osyn /home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/pll_sensor_clk_comp.srs /home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/layer0.srs   

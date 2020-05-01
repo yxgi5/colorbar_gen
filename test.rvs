@@ -1,0 +1,36 @@
+<Project ModBy="Inserter" Name="/home/andy/Downloads/tmp/colorbar_gen/test.rvl" Date="2020-04-24">
+    <Core Name="top_LA0">
+        <Setting>
+            <Capture SamplesPerTrig="2048" NumTrigsCap="1"/>
+            <Event EventCnt="0" CntEnableRun="0"/>
+            <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="fv"/>
+                <Sig Name="lv"/>
+                <Bus Name="pixdata" Radix="0">
+                    <Sig Name="pixdata:0"/>
+                    <Sig Name="pixdata:1"/>
+                    <Sig Name="pixdata:2"/>
+                    <Sig Name="pixdata:3"/>
+                    <Sig Name="pixdata:4"/>
+                    <Sig Name="pixdata:5"/>
+                    <Sig Name="pixdata:6"/>
+                    <Sig Name="pixdata:7"/>
+                    <Sig Name="pixdata:8"/>
+                    <Sig Name="pixdata:9"/>
+                </Bus>
+                <Sig Name="pixclk"/>
+            </Trace>
+            <Trigger>
+                <TU Operator="0" Name="TU1" ID="1" Value="0" Radix="0"/>
+                <TU Operator="0" Name="TU2" ID="2" Value="0" Radix="0"/>
+                <TU Operator="0" Name="TU3" ID="3" Value="1" Radix="0"/>
+                <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+                <TE Enable="0" Expression="TU2" Name="TE2" ID="2"/>
+                <TE Enable="1" Expression="TU3" Name="TE3" ID="3"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

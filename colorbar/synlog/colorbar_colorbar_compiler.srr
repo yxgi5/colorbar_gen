@@ -1,0 +1,252 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys HDL Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys Verilog Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/module/reveal/src/rvl_j2w_module/wb2sci.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/JTAG_SOFT.v" (library work)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v" (library work)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v" (library work)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v" (library work)
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":344:11:344:21|Net i2c_data_rd is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":594:11:594:16|Net scl_in is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":595:11:595:16|Net sda_in is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":677:11:677:21|Net i2c_rqt_pos is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":699:11:699:20|Net timer_125u is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1294:11:1294:21|Net i2c_data_rd is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1544:11:1544:16|Net scl_in is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1545:11:1545:16|Net sda_in is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1627:11:1627:21|Net i2c_rqt_pos is not declared.
+@W: CG1337 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1649:11:1649:20|Net timer_125u is not declared.
+Verilog syntax check successful!
+File /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v changed - recompiling
+File /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v changed - recompiling
+File /home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1069:7:1069:27|Synthesizing module pll_sensor_clk_uniq_1 in library work.
+Running optimization stage 1 on pll_sensor_clk_uniq_1 .......
+@W: CL168 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1079:8:1079:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1130:7:1130:25|Synthesizing module colorbar_gen_uniq_1 in library work.
+Running optimization stage 1 on colorbar_gen_uniq_1 .......
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1226:4:1226:9|Pruning unused register ative_line_cnt[11:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Pruning unused register q_fv. Make sure that there are no unused intermediate registers.
+@A: CL282 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Feedback mux created for signal de. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1308:7:1308:26|Synthesizing module hdmi_i2c_ctrl_uniq_1 in library work.
+@W: CG133 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1315:21:1315:30|Object addr_reg_L is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1317:21:1317:29|Object data_wr_L is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on hdmi_i2c_ctrl_uniq_1 .......
+@A: CL110 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Too many clocks (> 8) for set/reset analysis of data_wr_H, try moving enabling expressions outside always block
+@W: CL118 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Latch generated from always block for signal data_wr_H[7:0]; possible missing assignment in an if or case statement.
+@A: CL110 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Too many clocks (> 8) for set/reset analysis of addr_reg_H, try moving enabling expressions outside always block
+@W: CL118 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Latch generated from always block for signal addr_reg_H[7:0]; possible missing assignment in an if or case statement.
+@A: CL110 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Too many clocks (> 8) for set/reset analysis of addr_dev, try moving enabling expressions outside always block
+@W: CL118 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Latch generated from always block for signal addr_dev[6:0]; possible missing assignment in an if or case statement.
+@A: CL110 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Too many clocks (> 8) for set/reset analysis of cmd, try moving enabling expressions outside always block
+@W: CL118 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1360:12:1360:15|Latch generated from always block for signal cmd; possible missing assignment in an if or case statement.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1477:7:1477:26|Synthesizing module hdmi_i2c_core_uniq_1 in library work.
+Running optimization stage 1 on hdmi_i2c_core_uniq_1 .......
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1712:4:1712:9|Pruning unused register data_wr_tmp[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1564:4:1564:9|Pruning unused register cnt_byte[3:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1273:7:1273:25|Synthesizing module hdmi_i2c_top_uniq_1 in library work.
+Running optimization stage 1 on hdmi_i2c_top_uniq_1 .......
+Running optimization stage 1 on rvl_jtag_int_13s_3s_0s_0s_4s_13s_13s .......
+Running optimization stage 1 on rvl_decode_3s_3s .......
+Running optimization stage 1 on rvl_tu_1s_0s_0s_0s_1s .......
+Running optimization stage 1 on pmi_ram_dp_Z2 .......
+Running optimization stage 1 on rvl_te_Z1 .......
+Running optimization stage 1 on pmi_distributed_dpram_8s_3s_2s_reg_none_binary_ECP5UM_pmi_distributed_dpram_Z4 .......
+Running optimization stage 1 on rvl_te_Z3 .......
+Running optimization stage 1 on rvl_tcnt_3s_3s_1_0s .......
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+Running optimization stage 1 on top_la0_trig .......
+Running optimization stage 1 on pmi_ram_dp_Z6 .......
+Running optimization stage 1 on rvl_tm_Z5 .......
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+Running optimization stage 1 on top_la0 .......
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+Running optimization stage 1 on jtagconn16 .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:9:1164:12|*Output jtck has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:15:1164:18|*Output jtdi has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:21:1164:26|*Output jshift has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:29:1164:35|*Output jupdate has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:38:1164:42|*Output jrstn has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:45:1164:48|*Output jce2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1164:51:1164:59|*Output ip_enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":15:29:15:39|Removing wire trigger_out, as there is no assignment to it.
+Running optimization stage 1 on reveal_coretop .......
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":53:7:53:9|Synthesizing module top in library work.
+@W: CG360 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":63:11:63:14|Removing wire test, as there is no assignment to it.
+@W: CG360 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":65:9:65:14|Removing wire clk24M, as there is no assignment to it.
+Running optimization stage 1 on top .......
+@W: CL318 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":63:11:63:14|*Output test has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL189 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":76:4:76:9|Register bit reset_n is always 1.
+Running optimization stage 2 on top .......
+@W: CL156 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":65:9:65:14|*Input clk24M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Running optimization stage 2 on reveal_coretop .......
+Running optimization stage 2 on jtagconn16 .......
+Running optimization stage 2 on top_la0 .......
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":55:7:55:13|Input reset_n is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":68:7:68:16|Input trigger_en is unused.
+Running optimization stage 2 on pmi_ram_dp_Z6 .......
+Running optimization stage 2 on rvl_tm_Z5 .......
+Running optimization stage 2 on top_la0_trig .......
+Running optimization stage 2 on rvl_tcnt_3s_3s_1_0s .......
+Running optimization stage 2 on pmi_distributed_dpram_8s_3s_2s_reg_none_binary_ECP5UM_pmi_distributed_dpram_Z4 .......
+Running optimization stage 2 on rvl_te_Z3 .......
+Extracted state machine for register next_then_shift
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Running optimization stage 2 on pmi_ram_dp_Z2 .......
+Running optimization stage 2 on rvl_te_Z1 .......
+Running optimization stage 2 on rvl_tu_1s_0s_0s_0s_1s .......
+Running optimization stage 2 on rvl_decode_3s_3s .......
+Running optimization stage 2 on rvl_jtag_int_13s_3s_0s_0s_4s_13s_13s .......
+Running optimization stage 2 on hdmi_i2c_top_uniq_1 .......
+Running optimization stage 2 on hdmi_i2c_core_uniq_1 .......
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1629:4:1629:9|Optimizing register bit cnt_1bit[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1629:4:1629:9|Optimizing register bit cnt_1bit[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1629:4:1629:9|Pruning register bits 9 to 8 of cnt_1bit[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1784:4:1784:9|Trying to extract state machine for register i2c_cs.
+Extracted state machine for register i2c_cs
+State machine has 12 reachable states with original encodings of:
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   001001
+   001010
+   010111
+   011000
+   011001
+   011010
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1718:4:1718:9|Optimizing register bit data_rdy to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Optimizing register bit data_rd[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1731:4:1731:9|Pruning unused register data_rd[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1718:4:1718:9|Pruning unused register data_rdy. Make sure that there are no unused intermediate registers.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1486:21:1486:30|Input addr_reg_L is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1488:21:1488:29|Input data_wr_L is unused.
+Running optimization stage 2 on hdmi_i2c_ctrl_uniq_1 .......
+@A: CL153 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1315:21:1315:30|*Unassigned bits of addr_reg_L[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1317:21:1317:29|*Unassigned bits of data_wr_L[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1318:15:1318:22|Input data_rdy is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1319:21:1319:27|Input data_rd is unused.
+Running optimization stage 2 on colorbar_gen_uniq_1 .......
+@W: CL190 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1158:4:1158:9|Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1233:4:1233:9|Pruning register bits 35 to 25 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1233:4:1233:9|Pruning register bits 23 to 13 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v":1233:4:1233:9|Pruning register bits 11 to 1 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on pll_sensor_clk_uniq_1 .......
+Running optimization stage 2 on EHXPLLL .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 86MB peak: 101MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr 26 13:20:34 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+File /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr 26 13:20:34 2020
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr 26 13:20:34 2020
+
+###########################################################]

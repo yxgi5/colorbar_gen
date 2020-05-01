@@ -1,0 +1,97 @@
+#Build: Synplify Pro (R) N-2018.03L-SP1-1, Build 443R, Apr  1 2019
+#install: /opt/lscc/diamond/3.11_x64/synpbase
+#OS: Linux 
+#Hostname: debian-dell
+
+# Fri Apr 24 15:54:40 2020
+
+#Implementation: colorbar
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys HDL Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+Synopsys Verilog Compiler, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
+
+@N|Running in 64-bit mode
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/opt/lscc/diamond/3.11_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/top.v" (library work)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v" (library work)
+@I::"/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":8:7:8:20|Synthesizing module pll_sensor_clk in library work.
+Running optimization stage 1 on pll_sensor_clk .......
+@W: CL168 :"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":20:8:20:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@E: CG389 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":60:1:60:14|Reference to undefined module colorbar_gen
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":1:8:1:10|Synthesizing module top in library work.
+@W: CG141 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":60:1:60:14|Creating black box for colorbar_gen
+	Making port rstn an input
+Making port clk a bidir
+Making port fv a bidir
+Making port lv a bidir
+Making port data a bidir
+	Making port vsync an input
+	Making port hsync an input
+@W: CG781 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":67:13:67:13|Input vsync on instance u_colorbar_gen is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":68:13:68:13|Input hsync on instance u_colorbar_gen is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":11:8:11:11|Removing wire test, as there is no assignment to it.
+@W: CG360 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":16:5:16:10|Removing wire clk24M, as there is no assignment to it.
+Running optimization stage 1 on top .......
+@W: CL318 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":11:8:11:11|*Output test has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL189 :"/home/andy/Downloads/tmp/colorbar_gen/top.v":28:0:28:5|Register bit reset_n is always 1.
+Running optimization stage 2 on top .......
+Running optimization stage 2 on pll_sensor_clk .......
+Running optimization stage 2 on EHXPLLL .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/layer0.rt.csv
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 24 15:54:40 2020
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 24 15:54:40 2020
+
+###########################################################]

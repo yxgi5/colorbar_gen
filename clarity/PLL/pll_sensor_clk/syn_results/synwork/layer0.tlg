@@ -1,0 +1,29 @@
+Selecting top level module pll_sensor_clk
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":758:10:758:10|*Output Z has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":762:10:762:10|*Output Z has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:7:1700:11|*Output CLKOP has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:13:1700:17|*Output CLKOS has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:19:1700:24|*Output CLKOS2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:26:1700:31|*Output CLKOS3 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:33:1700:36|*Output LOCK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1700:38:1700:44|*Output INTLOCK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1701:7:1701:12|*Output REFCLK has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5um.v":1701:15:1701:22|*Output CLKINTFB has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@N: CG364 :"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":8:7:8:20|Synthesizing module pll_sensor_clk in library work.
+Running optimization stage 1 on pll_sensor_clk .......
+@W: CL168 :"/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":20:8:20:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Running optimization stage 2 on pll_sensor_clk .......
+Running optimization stage 2 on EHXPLLL .......
+Running optimization stage 2 on VLO .......
+Running optimization stage 2 on VHI .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/layer0.rt.csv
+

@@ -1,0 +1,24 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, top, 0h:00m:00s,     81 MB
+work, reveal_coretop, 0h:00m:00s,     81 MB
+work, jtagconn16, 0h:00m:00s,     81 MB
+work, top_la0, 0h:00m:00s,     81 MB
+work, pmi_ram_dp_Z6, 0h:00m:00s,     81 MB
+work, rvl_tm_Z5, 0h:00m:00s,     91 MB
+work, top_la0_trig, 0h:00m:00s,     91 MB
+work, rvl_tcnt_3s_3s_1_0s, 0h:00m:00s,     91 MB
+work, pmi_distributed_dpram_8s_3s_2s_reg_none_binary_ECP5UM_pmi_distributed_dpram_Z4, 0h:00m:00s,     91 MB
+work, rvl_te_Z3, 0h:00m:00s,    101 MB
+work, pmi_ram_dp_Z2, 0h:00m:00s,    101 MB
+work, rvl_te_Z1, 0h:00m:00s,    101 MB
+work, rvl_tu_1s_0s_0s_0s_1s, 0h:00m:00s,    101 MB
+work, rvl_decode_3s_3s, 0h:00m:00s,    101 MB
+work, rvl_jtag_int_13s_3s_0s_0s_4s_13s_13s, 0h:00m:00s,    101 MB
+work, hdmi_i2c_top_uniq_1, 0h:00m:00s,    101 MB
+work, hdmi_i2c_core_uniq_1, 0h:00m:00s,    101 MB
+work, hdmi_i2c_ctrl_uniq_1, 0h:00m:00s,    101 MB
+work, colorbar_gen_uniq_1, 0h:00m:00s,    101 MB
+work, pll_sensor_clk_uniq_1, 0h:00m:00s,    101 MB
+work, EHXPLLL, 0h:00m:00s,    101 MB
+work, VLO, 0h:00m:00s,    101 MB
+work, VHI, 0h:00m:00s,    101 MB

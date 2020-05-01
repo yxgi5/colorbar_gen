@@ -1,0 +1,2605 @@
+
+Loading design for application trce from file colorbar_colorbar.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM-85F
+Package:     CABGA756
+Performance: 8
+Loading device for application trce from file 'sa5p85m.nph' in environment: /opt/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
+Sun Apr 26 13:21:08 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 8 -sphld m -o colorbar_colorbar.twr -gui -msgset /home/andy/Downloads/tmp/colorbar_gen/promote.xml colorbar_colorbar.ncd colorbar_colorbar.prf 
+Design file:     colorbar_colorbar.ncd
+Preference file: colorbar_colorbar.prf
+Device,speed:    LFE5UM-85F,8
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+24 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A0 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C104B.A0 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B0 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C104B.B0 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B0 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C104B.B0 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B0 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C104B.B0 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B1 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C103B.B1 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A0 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C106B.A0 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A0 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C106B.A0 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B1 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C103B.B1 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A0 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C104B.A0 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A0 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C105B.A0 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B0 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R42C103B.B0 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A1 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C104B.A1 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B1 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C103B.B1 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 3.578ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_colorbar_gen/pix_rgb[12]  (to w_pixclk +)
+
+   Delay:              10.522ns  (49.3% logic, 50.7% route), 21 logic levels.
+
+ Constraint Details:
+
+     10.522ns physical path delay u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407 exceeds
+      6.734ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 6.944ns) by 3.578ns
+
+ Physical Path Details:
+
+      Data path u_colorbar_gen/SLICE_19 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393   R42C107B.CLK to    R42C107B.Q1 u_colorbar_gen/SLICE_19 (from w_pixclk)
+ROUTE         3     0.590    R42C107B.Q1 to    R41C107A.B1 u_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.355    R41C107A.B1 to   R41C107A.FCO u_colorbar_gen/SLICE_29
+ROUTE         1     0.000   R41C107A.FCO to   R41C107B.FCI u_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.056   R41C107B.FCI to   R41C107B.FCO u_colorbar_gen/SLICE_30
+ROUTE         1     0.000   R41C107B.FCO to   R41C107C.FCI u_colorbar_gen/mult1_un54_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C107C.FCI to   R41C107C.FCO u_colorbar_gen/SLICE_31
+ROUTE         1     0.000   R41C107C.FCO to   R41C107D.FCI u_colorbar_gen/mult1_un54_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C107D.FCI to    R41C107D.F0 u_colorbar_gen/SLICE_32
+ROUTE         5     0.771    R41C107D.F0 to    R41C105B.A1 u_colorbar_gen/mult1_un54_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C105B.A1 to   R41C105B.FCO u_colorbar_gen/SLICE_26
+ROUTE         1     0.000   R41C105B.FCO to   R41C105C.FCI u_colorbar_gen/mult1_un61_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C105C.FCI to   R41C105C.FCO u_colorbar_gen/SLICE_27
+ROUTE         1     0.000   R41C105C.FCO to   R41C105D.FCI u_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C105D.FCI to    R41C105D.F0 u_colorbar_gen/SLICE_28
+ROUTE         5     0.614    R41C105D.F0 to    R41C106B.A1 u_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R41C106B.A1 to   R41C106B.FCO u_colorbar_gen/SLICE_22
+ROUTE         1     0.000   R41C106B.FCO to   R41C106C.FCI u_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C106C.FCI to   R41C106C.FCO u_colorbar_gen/SLICE_23
+ROUTE         1     0.000   R41C106C.FCO to   R41C106D.FCI u_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C106D.FCI to    R41C106D.F0 u_colorbar_gen/SLICE_24
+ROUTE         5     0.765    R41C106D.F0 to    R41C104B.A0 u_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.355    R41C104B.A0 to   R41C104B.FCO u_colorbar_gen/SLICE_42
+ROUTE         1     0.000   R41C104B.FCO to   R41C104C.FCI u_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.056   R41C104C.FCI to   R41C104C.FCO u_colorbar_gen/SLICE_43
+ROUTE         1     0.000   R41C104C.FCO to   R41C104D.FCI u_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.328   R41C104D.FCI to    R41C104D.F0 u_colorbar_gen/SLICE_44
+ROUTE         5     0.751    R41C104D.F0 to    R42C104B.B1 u_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C104B.B1 to   R42C104B.FCO u_colorbar_gen/SLICE_38
+ROUTE         1     0.000   R42C104B.FCO to   R42C104C.FCI u_colorbar_gen/mult1_un82_sum_cry_7
+FCITOFCO_D  ---     0.056   R42C104C.FCI to   R42C104C.FCO u_colorbar_gen/SLICE_39
+ROUTE         1     0.000   R42C104C.FCO to   R42C104D.FCI u_colorbar_gen/mult1_un82_sum_cry_9
+FCITOF0_DE  ---     0.328   R42C104D.FCI to    R42C104D.F0 u_colorbar_gen/SLICE_40
+ROUTE         5     0.619    R42C104D.F0 to    R42C103B.B1 u_colorbar_gen/mult1_un82_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.355    R42C103B.B1 to   R42C103B.FCO u_colorbar_gen/SLICE_34
+ROUTE         1     0.000   R42C103B.FCO to   R42C103C.FCI u_colorbar_gen/mult1_un89_sum_cry_7
+FCITOF0_DE  ---     0.328   R42C103C.FCI to    R42C103C.F0 u_colorbar_gen/SLICE_35
+ROUTE         4     0.752    R42C103C.F0 to    R44C103B.A1 u_colorbar_gen/mult1_un89_sum_cry_8_0_S0
+CTOF_DEL    ---     0.180    R44C103B.A1 to    R44C103B.F1 u_colorbar_gen/SLICE_491
+ROUTE         1     0.473    R44C103B.F1 to    R43C103D.C1 u_colorbar_gen/pix_rgb11_sn
+CTOF_DEL    ---     0.180    R43C103D.C1 to    R43C103D.F1 u_colorbar_gen/SLICE_407
+ROUTE         1     0.000    R43C103D.F1 to   R43C103D.DI1 u_colorbar_gen/pix_rgb11 (to w_pixclk)
+                  --------
+                   10.522   (49.3% logic, 50.7% route), 21 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R42C107B.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_colorbar_gen/SLICE_407:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     2.195  PLL_TL0.CLKOP to   R43C103D.CLK w_pixclk
+                  --------
+                    2.195   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning:  96.974MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "u_pll_sensor_clk/GND" 27.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk_in" 27.000000 MHz ;
+            2940 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 30.395ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[2]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.852ns  (29.4% logic, 70.6% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.852ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.395ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393    R78C95D.CLK to     R78C95D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 (from clk_in_c)
+ROUTE        18     1.066     R78C95D.Q1 to     R77C95C.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[2]
+CTOF_DEL    ---     0.180     R77C95C.A1 to     R77C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_582
+ROUTE         1     0.578     R77C95C.F1 to     R78C95A.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/N_37
+CTOF_DEL    ---     0.180     R78C95A.A1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.852   (29.4% logic, 70.6% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C95D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.426ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[3]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.821ns  (29.5% logic, 70.5% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.821ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.426ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R78C96B.CLK to     R78C96B.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 (from clk_in_c)
+ROUTE        18     1.033     R78C96B.Q0 to     R77C95C.B1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[3]
+CTOF_DEL    ---     0.180     R77C95C.B1 to     R77C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_582
+ROUTE         1     0.578     R77C95C.F1 to     R78C95A.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/N_37
+CTOF_DEL    ---     0.180     R78C95A.A1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.821   (29.5% logic, 70.5% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C96B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.505ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[1]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.742ns  (29.9% logic, 70.1% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.742ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.505ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R78C95D.CLK to     R78C95D.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 (from clk_in_c)
+ROUTE        20     0.954     R78C95D.Q0 to     R77C95C.C1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[1]
+CTOF_DEL    ---     0.180     R77C95C.C1 to     R77C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_582
+ROUTE         1     0.578     R77C95C.F1 to     R78C95A.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/N_37
+CTOF_DEL    ---     0.180     R78C95A.A1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.742   (29.9% logic, 70.1% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C95D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.534ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[10]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.713ns  (32.7% logic, 67.3% route), 11 logic levels.
+
+ Constraint Details:
+
+      6.713ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.534ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393    R79C96D.CLK to     R79C96D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 (from clk_in_c)
+ROUTE         2     0.585     R79C96D.Q1 to     R79C95A.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[10]
+CTOF_DEL    ---     0.180     R79C95A.A1 to     R79C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.420     R79C95A.F1 to     R79C95A.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt_0_sqmuxa_i_o2_1_3
+CTOF_DEL    ---     0.180     R79C95A.B0 to     R79C95A.F0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.320     R79C95A.F0 to     R78C95A.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_1_0_a2_1
+CTOF_DEL    ---     0.180     R78C95A.D1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.713   (32.7% logic, 67.3% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.563ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[8]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.684ns  (32.8% logic, 67.2% route), 11 logic levels.
+
+ Constraint Details:
+
+      6.684ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.563ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393    R79C95D.CLK to     R79C95D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 (from clk_in_c)
+ROUTE         2     0.556     R79C95D.Q1 to     R79C95A.B1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[8]
+CTOF_DEL    ---     0.180     R79C95A.B1 to     R79C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.420     R79C95A.F1 to     R79C95A.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt_0_sqmuxa_i_o2_1_3
+CTOF_DEL    ---     0.180     R79C95A.B0 to     R79C95A.F0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.320     R79C95A.F0 to     R78C95A.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_1_0_a2_1
+CTOF_DEL    ---     0.180     R78C95A.D1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.684   (32.8% logic, 67.2% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R79C95D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.648ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[9]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.599ns  (33.3% logic, 66.7% route), 11 logic levels.
+
+ Constraint Details:
+
+      6.599ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.648ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R79C96D.CLK to     R79C96D.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 (from clk_in_c)
+ROUTE         2     0.469     R79C96D.Q0 to     R79C95A.C1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[9]
+CTOF_DEL    ---     0.180     R79C95A.C1 to     R79C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.420     R79C95A.F1 to     R79C95A.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt_0_sqmuxa_i_o2_1_3
+CTOF_DEL    ---     0.180     R79C95A.B0 to     R79C95A.F0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.320     R79C95A.F0 to     R78C95A.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_1_0_a2_1
+CTOF_DEL    ---     0.180     R78C95A.D1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.599   (33.3% logic, 66.7% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.691ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[0]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.556ns  (30.7% logic, 69.3% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.556ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_148 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.691ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_148 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R78C94D.CLK to     R78C94D.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_148 (from clk_in_c)
+ROUTE        21     0.768     R78C94D.Q0 to     R77C95C.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un3lto0
+CTOF_DEL    ---     0.180     R77C95C.D1 to     R77C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_582
+ROUTE         1     0.578     R77C95C.F1 to     R78C95A.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/N_37
+CTOF_DEL    ---     0.180     R78C95A.A1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.556   (30.7% logic, 69.3% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_148:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C94D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.783ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[11]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.464ns  (34.0% logic, 66.0% route), 11 logic levels.
+
+ Constraint Details:
+
+      6.464ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.783ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R79C95A.CLK to     R79C95A.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 (from clk_in_c)
+ROUTE         2     0.334     R79C95A.Q0 to     R79C95A.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[11]
+CTOF_DEL    ---     0.180     R79C95A.D1 to     R79C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.420     R79C95A.F1 to     R79C95A.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt_0_sqmuxa_i_o2_1_3
+CTOF_DEL    ---     0.180     R79C95A.B0 to     R79C95A.F0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480
+ROUTE         2     0.320     R79C95A.F0 to     R78C95A.D1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_1_0_a2_1
+CTOF_DEL    ---     0.180     R78C95A.D1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.464   (34.0% logic, 66.0% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R79C95A.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.841ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[1]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.406ns  (31.5% logic, 68.5% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.406ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.841ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395    R78C95D.CLK to     R78C95D.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 (from clk_in_c)
+ROUTE        20     0.604     R78C95D.Q0 to     R78C95C.A1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[1]
+CTOF_DEL    ---     0.180     R78C95C.A1 to     R78C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_581
+ROUTE         1     0.592     R78C95C.F1 to     R78C95A.B1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0_a2_0_0
+CTOF_DEL    ---     0.180     R78C95A.B1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.406   (31.5% logic, 68.5% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C95D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 30.878ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[2]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[1]  (to clk_in_c +)
+
+   Delay:               6.369ns  (31.6% logic, 68.4% route), 10 logic levels.
+
+ Constraint Details:
+
+      6.369ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 30.878ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.393    R78C95D.CLK to     R78C95D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142 (from clk_in_c)
+ROUTE        18     0.569     R78C95D.Q1 to     R78C95C.B1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[2]
+CTOF_DEL    ---     0.180     R78C95C.B1 to     R78C95C.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_581
+ROUTE         1     0.592     R78C95C.F1 to     R78C95A.B1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0_a2_0_0
+CTOF_DEL    ---     0.180     R78C95A.B1 to     R78C95A.F1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_474
+ROUTE        24     1.028     R78C95A.F1 to     R74C93C.B0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/un1_step_cnt_13_0
+CTOF_DEL    ---     0.180     R74C93C.B0 to     R74C93C.F0 hdmi_i2c_top_inst/SLICE_446
+ROUTE         3     0.491     R74C93C.F0 to     R73C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/cmd_0
+CTOF_DEL    ---     0.180     R73C92C.D0 to     R73C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_715
+ROUTE         1     0.458     R73C92C.F0 to     R72C92A.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_0_tz[1]
+CTOF_DEL    ---     0.180     R72C92A.C0 to     R72C92A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_440
+ROUTE         1     0.140     R72C92A.F0 to     R72C92C.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs_ns_i_0_o2_0_1_1[1]
+CTOF_DEL    ---     0.180     R72C92C.D0 to     R72C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_463
+ROUTE         2     0.480     R72C92C.F0 to     R71C92C.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265_1
+CTOF_DEL    ---     0.180     R71C92C.C0 to     R71C92C.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_462
+ROUTE         1     0.290     R71C92C.F0 to     R71C92B.C0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_265
+CTOF_DEL    ---     0.180     R71C92B.C0 to     R71C92B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_460
+ROUTE         1     0.308     R71C92B.F0 to     R72C92B.D1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_170
+CTOF_DEL    ---     0.180     R72C92B.D1 to     R72C92B.F1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135
+ROUTE         1     0.000     R72C92B.F1 to    R72C92B.DI1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_127_i (to clk_in_c)
+                  --------
+                    6.369   (31.6% logic, 68.4% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_142:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R78C95D.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     2.249      E17.PADDI to    R72C92B.CLK clk_in_c
+                  --------
+                    2.249   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  150.557MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "w_pixclk" 148.500000 MHz |             |             |
+;                                       |  148.500 MHz|   96.974 MHz|  21 *
+                                        |             |             |
+FREQUENCY NET "u_pll_sensor_clk/GND"    |             |             |
+27.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY PORT "clk_in" 27.000000 MHz ; |   27.000 MHz|  150.557 MHz|  10  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+u_colorbar_gen/mult1_un75_sum_cry_9     |       1|    4020|     98.14%
+                                        |        |        |
+u_colorbar_gen/mult1_un75_sum_s_10_0_S0 |       5|    4020|     98.14%
+                                        |        |        |
+u_colorbar_gen/mult1_un54_sum_cry_7     |       1|    4004|     97.75%
+                                        |        |        |
+u_colorbar_gen/mult1_un68_sum_s_10_0_S0 |       5|    3976|     97.07%
+                                        |        |        |
+u_colorbar_gen/mult1_un68_sum_cry_9     |       1|    3976|     97.07%
+                                        |        |        |
+u_colorbar_gen/pix_rgb11                |       1|    3848|     93.95%
+                                        |        |        |
+u_colorbar_gen/mult1_un54_sum_cry_9     |       1|    3804|     92.87%
+                                        |        |        |
+u_colorbar_gen/mult1_un54_sum_s_10_0_S0 |       5|    3804|     92.87%
+                                        |        |        |
+u_colorbar_gen/mult1_un82_sum_cry_9     |       1|    3656|     89.26%
+                                        |        |        |
+u_colorbar_gen/mult1_un82_sum_s_10_0_S0 |       5|    3656|     89.26%
+                                        |        |        |
+u_colorbar_gen/mult1_un82_sum_cry_7     |       1|    3444|     84.08%
+                                        |        |        |
+u_colorbar_gen/mult1_un61_sum_cry_9     |       1|    3372|     82.32%
+                                        |        |        |
+u_colorbar_gen/mult1_un61_sum_s_10_0_S0 |       5|    3372|     82.32%
+                                        |        |        |
+u_colorbar_gen/pix_rgb11_sn             |       1|    3368|     82.23%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_cry_7     |       1|    3004|     73.34%
+                                        |        |        |
+u_colorbar_gen/mult1_un61_sum_cry_7     |       1|    2888|     70.51%
+                                        |        |        |
+u_colorbar_gen/mult1_un75_sum_cry_7     |       1|    2712|     66.21%
+                                        |        |        |
+u_colorbar_gen/color_cntr[11]           |       3|    2464|     60.16%
+                                        |        |        |
+u_colorbar_gen/mult1_un68_sum_cry_7     |       1|    2168|     52.93%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_cry_8_0_S0|       4|    1932|     47.17%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_cry_9     |       1|    1688|     41.21%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_s_10_0_S0 |       5|    1688|     41.21%
+                                        |        |        |
+u_colorbar_gen/mult1_un54_sum_cry_5     |       1|    1632|     39.84%
+                                        |        |        |
+u_colorbar_gen/color_cntr[10]           |       3|    1632|     39.84%
+                                        |        |        |
+u_colorbar_gen/mult1_un61_sum_cry_8_0_S0|       1|     676|     16.50%
+                                        |        |        |
+u_colorbar_gen/pix_rgb10lt8             |       2|     496|     12.11%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_cry_6_0_RN|        |        |
+IB67G                                   |       1|     476|     11.62%
+                                        |        |        |
+u_colorbar_gen/mult1_un89_sum_cry_6_0_S1|       5|     476|     11.62%
+                                        |        |        |
+u_colorbar_gen/mult1_un82_sum_cry_8_0_S0|       1|     440|     10.74%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: w_pixclk   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 208
+   Covered under: FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: u_pll_sensor_clk/GND   Source: u_pll_sensor_clk/SLICE_634.F0   Loads: 5
+   No transfer within this clock domain is found
+
+Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK   Loads: 166
+   No transfer within this clock domain is found
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 37
+   Covered under: FREQUENCY PORT "clk_in" 27.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 13731460
+Cumulative negative slack: 13731460
+
+Constraints cover 665097 paths, 12 nets, and 4593 connections (94.47% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
+Sun Apr 26 13:21:08 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 8 -sphld m -o colorbar_colorbar.twr -gui -msgset /home/andy/Downloads/tmp/colorbar_gen/promote.xml colorbar_colorbar.ncd colorbar_colorbar.prf 
+Design file:     colorbar_colorbar.ncd
+Preference file: colorbar_colorbar.prf
+Device,speed:    LFE5UM-85F,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+24 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.175ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[1]  (to w_pixclk +)
+
+   Delay:               0.293ns  (56.0% logic, 44.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.293ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.175ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R59C86C.CLK to     R59C86C.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192 (from w_pixclk)
+ROUTE         1     0.129     R59C86C.Q0 to     R59C86C.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[0] (to w_pixclk)
+                  --------
+                    0.293   (56.0% logic, 44.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C86C.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_192:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C86C.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.175ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[1]  (to w_pixclk +)
+
+   Delay:               0.293ns  (56.0% logic, 44.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.293ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.175ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R59C87D.CLK to     R59C87D.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201 (from w_pixclk)
+ROUTE         1     0.129     R59C87D.Q0 to     R59C87D.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[0] (to w_pixclk)
+                  --------
+                    0.293   (56.0% logic, 44.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C87D.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_201:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C87D.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d1[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d2[0]  (to w_pixclk +)
+
+   Delay:               0.294ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.294ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.176ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R49C93B.CLK to     R49C93B.Q1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370 (from w_pixclk)
+ROUTE         6     0.131     R49C93B.Q1 to     R49C93B.M0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d1[0] (to w_pixclk)
+                  --------
+                    0.294   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R49C93B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/SLICE_370:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R49C93B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/input_a_d1[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/input_a_d2[0]  (to w_pixclk +)
+
+   Delay:               0.294ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.294ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.176ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R52C94A.CLK to     R52C94A.Q1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364 (from w_pixclk)
+ROUTE         6     0.131     R52C94A.Q1 to     R52C94A.M0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/input_a_d1[0] (to w_pixclk)
+                  --------
+                    0.294   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R52C94A.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/SLICE_364:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R52C94A.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/input_a_d1[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/input_a_d2[0]  (to w_pixclk +)
+
+   Delay:               0.294ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.294ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.176ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R51C93C.CLK to     R51C93C.Q1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376 (from w_pixclk)
+ROUTE         6     0.131     R51C93C.Q1 to     R51C93C.M0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/input_a_d1[0] (to w_pixclk)
+                  --------
+                    0.294   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R51C93C.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_2/SLICE_376:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R51C93C.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.177ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lv  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_din_d[1]  (to w_pixclk +)
+
+   Delay:               0.295ns  (55.6% logic, 44.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.295ns physical path delay SLICE_152 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_280 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.177ns
+
+ Physical Path Details:
+
+      Data path SLICE_152 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_280:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R45C98D.CLK to     R45C98D.Q0 SLICE_152 (from w_pixclk)
+ROUTE         2     0.131     R45C98D.Q0 to     R45C98C.M1 lv_c (to w_pixclk)
+                  --------
+                    0.295   (55.6% logic, 44.4% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to SLICE_152:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R45C98D.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_280:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R45C98C.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/tm_u/trig_stretch  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/tm_u/trig_stretch  (to w_pixclk +)
+
+   Delay:               0.297ns  (80.8% logic, 19.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.297ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R48C90B.CLK to     R48C90B.Q0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296 (from w_pixclk)
+ROUTE         3     0.057     R48C90B.Q0 to     R48C90B.D0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/trig_stretch
+CTOF_DEL    ---     0.076     R48C90B.D0 to     R48C90B.F0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296
+ROUTE         1     0.000     R48C90B.F0 to    R48C90B.DI0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_543_i (to w_pixclk)
+                  --------
+                    0.297   (80.8% logic, 19.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R48C90B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_296:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R48C90B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/trig_start_mask_cnt[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/trig_start_mask_cnt[0]  (to w_pixclk +)
+
+   Delay:               0.297ns  (80.8% logic, 19.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.297ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R59C91A.CLK to     R59C91A.Q0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340 (from w_pixclk)
+ROUTE         3     0.057     R59C91A.Q0 to     R59C91A.D0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/trig_start_mask_cnt[0]
+CTOF_DEL    ---     0.076     R59C91A.D0 to     R59C91A.F0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340
+ROUTE         1     0.000     R59C91A.F0 to    R59C91A.DI0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/trig_start_mask_cnt_9[0] (to w_pixclk)
+                  --------
+                    0.297   (80.8% logic, 19.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C91A.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/SLICE_340:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R59C91A.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (to w_pixclk +)
+
+   Delay:               0.296ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.296ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R55C88D.CLK to     R55C88D.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202 (from w_pixclk)
+ROUTE         5     0.132     R55C88D.Q0 to     R55C88D.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[2] (to w_pixclk)
+                  --------
+                    0.296   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R55C88D.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_202:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R55C88D.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/tm_u/full_reg  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/tm_u/full_reg  (to w_pixclk +)
+
+   Delay:               0.297ns  (80.8% logic, 19.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.297ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R47C89B.CLK to     R47C89B.Q0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254 (from w_pixclk)
+ROUTE         2     0.057     R47C89B.Q0 to     R47C89B.D0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/full_reg
+CTOF_DEL    ---     0.076     R47C89B.D0 to     R47C89B.F0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254
+ROUTE         1     0.000     R47C89B.F0 to    R47C89B.DI0 top_reveal_coretop_instance/top_la0_inst_0/tm_u/N_539_i (to w_pixclk)
+                  --------
+                    0.297   (80.8% logic, 19.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R47C89B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_254:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       208     0.892  PLL_TL0.CLKOP to    R47C89B.CLK w_pixclk
+                  --------
+                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "u_pll_sensor_clk/GND" 27.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk_in" 27.000000 MHz ;
+            2940 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[10]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[10]  (to clk_in_c +)
+
+   Delay:               0.294ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.294ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.176ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R79C96D.CLK to     R79C96D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 (from clk_in_c)
+ROUTE         2     0.131     R79C96D.Q1 to     R79C96D.M1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[10] (to clk_in_c)
+                  --------
+                    0.294   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.177ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[9]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[9]  (to clk_in_c +)
+
+   Delay:               0.295ns  (55.6% logic, 44.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.295ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.177ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R79C96D.CLK to     R79C96D.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146 (from clk_in_c)
+ROUTE         2     0.131     R79C96D.Q0 to     R79C96D.M0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[9] (to clk_in_c)
+                  --------
+                    0.295   (55.6% logic, 44.4% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_146:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C96D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.177ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[11]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[11]  (to clk_in_c +)
+
+   Delay:               0.295ns  (55.6% logic, 44.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.295ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.177ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R79C95A.CLK to     R79C95A.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480 (from clk_in_c)
+ROUTE         2     0.131     R79C95A.Q0 to     R79C95A.M0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[11] (to clk_in_c)
+                  --------
+                    0.295   (55.6% logic, 44.4% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95A.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_480:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95A.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.177ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[5]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[5]  (to clk_in_c +)
+
+   Delay:               0.295ns  (55.6% logic, 44.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.295ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.177ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R79C95C.CLK to     R79C95C.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144 (from clk_in_c)
+ROUTE         3     0.131     R79C95C.Q0 to     R79C95C.M0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[5] (to clk_in_c)
+                  --------
+                    0.295   (55.6% logic, 44.4% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95C.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95C.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_s1  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_s2  (to clk_in_c +)
+
+   Delay:               0.296ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.296ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R74C91C.CLK to     R74C91C.Q0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139 (from clk_in_c)
+ROUTE         5     0.132     R74C91C.Q0 to     R74C91C.M1 hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_s1 (to clk_in_c)
+                  --------
+                    0.296   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91C.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91C.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_out  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_s1  (to clk_in_c +)
+
+   Delay:               0.296ns  (55.4% logic, 44.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.296ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R74C91A.CLK to     R74C91A.Q0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 (from clk_in_c)
+ROUTE         6     0.132     R74C91A.Q0 to     R74C91C.M0 HDMI_scl_c (to clk_in_c)
+                  --------
+                    0.296   (55.4% logic, 44.6% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91A.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_139:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91C.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.178ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[8]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[8]  (to clk_in_c +)
+
+   Delay:               0.296ns  (55.1% logic, 44.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.296ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.118ns) by 0.178ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R79C95D.CLK to     R79C95D.Q1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145 (from clk_in_c)
+ROUTE         2     0.133     R79C95D.Q1 to     R79C95D.M1 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[8] (to clk_in_c)
+                  --------
+                    0.296   (55.1% logic, 44.9% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_145:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R79C95D.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.179ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_out  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_out  (to clk_in_c +)
+
+   Delay:               0.298ns  (80.5% logic, 19.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.298ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.179ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R74C91A.CLK to     R74C91A.Q0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126 (from clk_in_c)
+ROUTE         6     0.058     R74C91A.Q0 to     R74C91A.D0 HDMI_scl_c
+CTOF_DEL    ---     0.076     R74C91A.D0 to     R74C91A.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126
+ROUTE         1     0.000     R74C91A.F0 to    R74C91A.DI0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/scl_out_3 (to clk_in_c)
+                  --------
+                    0.298   (80.5% logic, 19.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91A.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_126:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R74C91A.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.179ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[2]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[2]  (to clk_in_c +)
+
+   Delay:               0.298ns  (80.5% logic, 19.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.298ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.179ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136 to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R73C91B.CLK to     R73C91B.Q0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136 (from clk_in_c)
+ROUTE        14     0.058     R73C91B.Q0 to     R73C91B.D0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/i2c_cs[2]
+CTOF_DEL    ---     0.076     R73C91B.D0 to     R73C91B.F0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136
+ROUTE         1     0.000     R73C91B.F0 to    R73C91B.DI0 hdmi_i2c_top_inst/hdmi_i2c_core_inst/N_143_i (to clk_in_c)
+                  --------
+                    0.298   (80.5% logic, 19.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R73C91B.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_core_inst/SLICE_136:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R73C91B.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.181ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[3]  (from clk_in_c +)
+   Destination:    FF         Data in        hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[3]  (to clk_in_c +)
+
+   Delay:               0.300ns  (80.0% logic, 20.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.300ns physical path delay hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.181ns
+
+ Physical Path Details:
+
+      Data path hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R78C96B.CLK to     R78C96B.Q0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143 (from clk_in_c)
+ROUTE        18     0.060     R78C96B.Q0 to     R78C96B.D0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt[3]
+CTOF_DEL    ---     0.076     R78C96B.D0 to     R78C96B.F0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143
+ROUTE         1     0.000     R78C96B.F0 to    R78C96B.DI0 hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/step_cnt_RNO[3] (to clk_in_c)
+                  --------
+                    0.300   (80.0% logic, 20.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R78C96B.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk_in to hdmi_i2c_top_inst/hdmi_i2c_ctrl_inst/SLICE_143:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        37     0.911      E17.PADDI to    R78C96B.CLK clk_in_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "w_pixclk" 148.500000 MHz |             |             |
+;                                       |     0.000 ns|     0.175 ns|   1  
+                                        |             |             |
+FREQUENCY NET "u_pll_sensor_clk/GND"    |             |             |
+27.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY PORT "clk_in" 27.000000 MHz ; |            -|            -|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: w_pixclk   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 208
+   Covered under: FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: u_pll_sensor_clk/GND   Source: u_pll_sensor_clk/SLICE_634.F0   Loads: 5
+   No transfer within this clock domain is found
+
+Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK   Loads: 166
+   No transfer within this clock domain is found
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 37
+   Covered under: FREQUENCY PORT "clk_in" 27.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 665097 paths, 12 nets, and 4593 connections (94.47% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 13731460 (setup), 0 (hold)
+Cumulative negative slack: 13731460 (13731460+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

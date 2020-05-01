@@ -1,0 +1,10 @@
+#Start recording tcl command: 4/24/2020 17:49:29
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+sbp_design open -dsgn "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/PLL.sbx"
+prj_run Export -impl colorbar -task Bitgen
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 4/24/2020 17:54:54

@@ -1,0 +1,161 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn200424171747"></A><B><U><big>pn200424171747</big></U></B>
+#Start recording tcl command: 4/24/2020 16:38:45
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+sbp_design open -dsgn "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk"
+source "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk"
+source "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_design save
+prj_run Export -impl colorbar -task Bitgen
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+pgr_program run
+pgr_project save "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_project close
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Translate -impl colorbar
+prj_run Translate -impl colorbar
+prj_run Map -impl colorbar
+prj_run Synthesis -impl colorbar
+prj_run Translate -impl colorbar
+pgr_project save "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+prj_project save
+prj_project close
+#Stop recording: 4/24/2020 17:17:47
+
+
+
+<A name="pn200424175454"></A><B><U><big>pn200424175454</big></U></B>
+#Start recording tcl command: 4/24/2020 17:49:29
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+sbp_design open -dsgn "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/PLL.sbx"
+prj_run Export -impl colorbar -task Bitgen
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 4/24/2020 17:54:54
+
+
+
+<A name="pn200426091127"></A><B><U><big>pn200426091127</big></U></B>
+#Start recording tcl command: 4/26/2020 08:39:57
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_run Export -impl colorbar -task Bitgen
+prj_strgy set_value -strategy Strategy1 map_pack_logic_blk_util=
+prj_strgy set_value -strategy Strategy1 par_cdp=Auto par_cdr=1
+prj_run Export -impl colorbar -task Bitgen
+prj_project save
+prj_project close
+#Stop recording: 4/26/2020 09:11:27
+
+
+
+<A name="pn200426092558"></A><B><U><big>pn200426092558</big></U></B>
+#Start recording tcl command: 4/26/2020 09:17:42
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_run Export -impl colorbar -task Bitgen -forceAll
+prj_project close
+#Stop recording: 4/26/2020 09:25:58
+
+
+
+<A name="pn200426133640"></A><B><U><big>pn200426133640</big></U></B>
+#Start recording tcl command: 4/26/2020 12:26:37
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run PAR -impl colorbar -task PARTrace
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Map -impl colorbar
+prj_run PAR -impl colorbar -task PARTrace
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_project save
+prj_project close
+#Stop recording: 4/26/2020 13:36:40
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

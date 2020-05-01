@@ -1,0 +1,35 @@
+#Start recording tcl command: 4/24/2020 16:38:45
+#Project Location: /home/andy/Downloads/tmp/colorbar_gen; Project name: colorbar
+prj_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar.ldf"
+sbp_design open -dsgn "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk"
+source "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk"
+source "/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_design save
+prj_run Export -impl colorbar -task Bitgen
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+pgr_program run
+pgr_project save "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_project close
+pgr_project open "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+pgr_program run
+prj_run Export -impl colorbar -task Bitgen
+prj_run Export -impl colorbar -task Bitgen
+prj_run Translate -impl colorbar
+prj_run Translate -impl colorbar
+prj_run Map -impl colorbar
+prj_run Synthesis -impl colorbar
+prj_run Translate -impl colorbar
+pgr_project save "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar.xcf"
+prj_project save
+prj_project close
+#Stop recording: 4/24/2020 17:17:47

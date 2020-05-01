@@ -1,0 +1,128 @@
+24 potential circuit loops found in timing analysis.
+Loading design for application iotiming from file colorbar_colorbar.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM-85F
+Package:     CABGA756
+Performance: 9
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+Loading design for application iotiming from file colorbar_colorbar.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM-85F
+Package:     CABGA756
+Performance: M
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+// Design: top
+// Package: CABGA756
+// ncd File: colorbar_colorbar.ncd
+// Version: Diamond (64-bit) 3.11.0.396.4
+// Written on Sun Apr 26 10:04:27 2020
+// M: Minimum Performance Grade
+// iotiming colorbar_colorbar.ncd colorbar_colorbar.prf -gui -msgset /home/andy/Downloads/tmp/colorbar_gen/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 9, 8):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port     Clock  Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+HDMI_scl clk_in R    11.009         8        5.420          M
+HDMI_sda clk_in R    10.607         8        5.229          M
+
+
+// Internal_Clock to Output
+
+Port        Internal_Clock      
+--------------------------------------------------------
+de          w_pixclk            
+de          u_pll_sensor_clk/GND
+fv          w_pixclk            
+fv          u_pll_sensor_clk/GND
+lv          w_pixclk            
+lv          u_pll_sensor_clk/GND
+pixdata[0]  w_pixclk            
+pixdata[0]  u_pll_sensor_clk/GND
+pixdata[10] w_pixclk            
+pixdata[10] u_pll_sensor_clk/GND
+pixdata[11] w_pixclk            
+pixdata[11] u_pll_sensor_clk/GND
+pixdata[12] w_pixclk            
+pixdata[12] u_pll_sensor_clk/GND
+pixdata[13] w_pixclk            
+pixdata[13] u_pll_sensor_clk/GND
+pixdata[14] w_pixclk            
+pixdata[14] u_pll_sensor_clk/GND
+pixdata[15] w_pixclk            
+pixdata[15] u_pll_sensor_clk/GND
+pixdata[16] w_pixclk            
+pixdata[16] u_pll_sensor_clk/GND
+pixdata[17] w_pixclk            
+pixdata[17] u_pll_sensor_clk/GND
+pixdata[18] w_pixclk            
+pixdata[18] u_pll_sensor_clk/GND
+pixdata[19] w_pixclk            
+pixdata[19] u_pll_sensor_clk/GND
+pixdata[1]  w_pixclk            
+pixdata[1]  u_pll_sensor_clk/GND
+pixdata[20] w_pixclk            
+pixdata[20] u_pll_sensor_clk/GND
+pixdata[21] w_pixclk            
+pixdata[21] u_pll_sensor_clk/GND
+pixdata[22] w_pixclk            
+pixdata[22] u_pll_sensor_clk/GND
+pixdata[23] w_pixclk            
+pixdata[23] u_pll_sensor_clk/GND
+pixdata[24] w_pixclk            
+pixdata[24] u_pll_sensor_clk/GND
+pixdata[25] w_pixclk            
+pixdata[25] u_pll_sensor_clk/GND
+pixdata[26] w_pixclk            
+pixdata[26] u_pll_sensor_clk/GND
+pixdata[27] w_pixclk            
+pixdata[27] u_pll_sensor_clk/GND
+pixdata[28] w_pixclk            
+pixdata[28] u_pll_sensor_clk/GND
+pixdata[29] w_pixclk            
+pixdata[29] u_pll_sensor_clk/GND
+pixdata[2]  w_pixclk            
+pixdata[2]  u_pll_sensor_clk/GND
+pixdata[30] w_pixclk            
+pixdata[30] u_pll_sensor_clk/GND
+pixdata[31] w_pixclk            
+pixdata[31] u_pll_sensor_clk/GND
+pixdata[32] w_pixclk            
+pixdata[32] u_pll_sensor_clk/GND
+pixdata[33] w_pixclk            
+pixdata[33] u_pll_sensor_clk/GND
+pixdata[34] w_pixclk            
+pixdata[34] u_pll_sensor_clk/GND
+pixdata[35] w_pixclk            
+pixdata[35] u_pll_sensor_clk/GND
+pixdata[3]  w_pixclk            
+pixdata[3]  u_pll_sensor_clk/GND
+pixdata[4]  w_pixclk            
+pixdata[4]  u_pll_sensor_clk/GND
+pixdata[5]  w_pixclk            
+pixdata[5]  u_pll_sensor_clk/GND
+pixdata[6]  w_pixclk            
+pixdata[6]  u_pll_sensor_clk/GND
+pixdata[7]  w_pixclk            
+pixdata[7]  u_pll_sensor_clk/GND
+pixdata[8]  w_pixclk            
+pixdata[8]  u_pll_sensor_clk/GND
+pixdata[9]  w_pixclk            
+pixdata[9]  u_pll_sensor_clk/GND

@@ -1,0 +1,8 @@
+/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter  -link  -top  top  -multisrs  /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_comp.srs  -osyn  /home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_mult.srs  -log  /home/andy/Downloads/tmp/colorbar_gen/colorbar/synlog/colorbar_colorbar_multi_srs_gen.srr 
+relcom:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter -link -top top -multisrs ../synwork/colorbar_colorbar_comp.srs -osyn ../synwork/colorbar_colorbar_mult.srs -log ../synlog/colorbar_colorbar_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/colorbar_colorbar_comp.srs|io:i|time:1587878434|size:164855|exec:0|csum:C3C3AB7A19378B7B408D341048E9075A
+file:../synwork/colorbar_colorbar_mult.srs|io:o|time:1587878435|size:5364|exec:0|csum:
+file:../synlog/colorbar_colorbar_multi_srs_gen.srr|io:o|time:1587878435|size:1134|exec:0|csum:
+file:/opt/lscc/diamond/3.11_x64/synpbase/linux_a_64/syn_nfilter|io:i|time:1554136095|size:13311896|exec:1|csum:98436EBE5B2063E67A0107F26BF96360
+file:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter|io:i|time:1554135608|size:366|exec:1|csum:FA02E240C38072139DDDFB111F4F0C5E

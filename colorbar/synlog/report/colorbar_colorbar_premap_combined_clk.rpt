@@ -1,0 +1,28 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 61 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 560 clock pin(s) of sequential element(s)
+0 instances converted, 560 sequential instances remain driven by gated/generated clocks
+
+=========================================== Non-Gated/Non-Generated Clocks ===========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                               
+----------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_3       clk_in              Unconstrained_port     61         hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3]
+======================================================================================================================
+============================================================================================== Gated/Generated Clocks ==============================================================================================
+Clock Tree ID     Driving Element                                              Drive Element Type        Unconverted Fanout     Sample Instance                                      Explanation                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       u_pll_sensor_clk.CLKOP                                       pll_sensor_clk_uniq_1     305                    pixdata[35:0]                                        Black box on clock path        
+@KP:ckid0_2       top_reveal_coretop_instance.jtagconn16_inst_0.jtck           jtagconn16                231                    ENCRYPTED                                            Black box on clock path        
+@KP:ckid0_4       hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT     or                        24                     hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6]     Clock source is invalid for GCC
+====================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+

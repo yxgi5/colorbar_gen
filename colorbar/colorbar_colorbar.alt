@@ -1,0 +1,52 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Apr 26 13:21:21 2020 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LFE5UM-85F-8CABGA756 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS test : F9 : out *
+NOTE PINS pixdata[0] : T31 : out *
+NOTE PINS clk_in : E17 : in *
+NOTE PINS HDMI_sda : AJ1 : out *
+NOTE PINS HDMI_scl : AG1 : out *
+NOTE PINS de : C25 : out *
+NOTE PINS pixclk : E25 : out *
+NOTE PINS lv : D25 : out *
+NOTE PINS fv : A25 : out *
+NOTE PINS pixdata[35] : F17 : out *
+NOTE PINS pixdata[34] : F25 : out *
+NOTE PINS pixdata[33] : W28 : out *
+NOTE PINS pixdata[32] : D24 : out *
+NOTE PINS pixdata[31] : Y27 : out *
+NOTE PINS pixdata[30] : AC26 : out *
+NOTE PINS pixdata[29] : AB27 : out *
+NOTE PINS pixdata[28] : AB28 : out *
+NOTE PINS pixdata[27] : AB30 : out *
+NOTE PINS pixdata[26] : AB29 : out *
+NOTE PINS pixdata[25] : AD27 : out *
+NOTE PINS pixdata[24] : AE27 : out *
+NOTE PINS pixdata[23] : T30 : out *
+NOTE PINS pixdata[22] : W30 : out *
+NOTE PINS pixdata[21] : Y26 : out *
+NOTE PINS pixdata[20] : W32 : out *
+NOTE PINS pixdata[19] : V32 : out *
+NOTE PINS pixdata[18] : AB31 : out *
+NOTE PINS pixdata[17] : AC30 : out *
+NOTE PINS pixdata[16] : T32 : out *
+NOTE PINS pixdata[15] : A24 : out *
+NOTE PINS pixdata[14] : R26 : out *
+NOTE PINS pixdata[13] : T26 : out *
+NOTE PINS pixdata[12] : AD26 : out *
+NOTE PINS pixdata[11] : AD32 : out *
+NOTE PINS pixdata[10] : AC32 : out *
+NOTE PINS pixdata[9] : AB32 : out *
+NOTE PINS pixdata[8] : AC31 : out *
+NOTE PINS pixdata[7] : V26 : out *
+NOTE PINS pixdata[6] : V27 : out *
+NOTE PINS pixdata[5] : U28 : out *
+NOTE PINS pixdata[4] : T29 : out *
+NOTE PINS pixdata[3] : W31 : out *
+NOTE PINS pixdata[2] : Y32 : out *
+NOTE PINS pixdata[1] : R32 : out *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: off *

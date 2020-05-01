@@ -1,0 +1,272 @@
+i w_pixclk
+m 0 0
+u 91 305
+n ckid0_0 {t:ENCRYPTED} Black box on clock path
+p {t:w_pixclk.OUT[0]}{t:pixdata[35:0].C}
+e ckid0_1 {t:pixdata[35:0].C} dff
+d ckid0_0,ckid0_1 {t:u_pll_sensor_clk.CLKOP} pll_sensor_clk_uniq_1 Black box on clock path
+i top_reveal_coretop_instance.jtck_i[0]
+m 0 0
+u 58 231
+n ckid0_2 {t:ENCRYPTED} Black box on clock path
+p {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtck}{t:top_reveal_coretop_instance.jtck_inferred_clock[0].I[0]}{t:top_reveal_coretop_instance.jtck_inferred_clock[0].OUT[0]}{t:top_reveal_coretop_instance.top_la0_inst_0.jtck}{p:top_reveal_coretop_instance.top_la0_inst_0.jtck}{t:top_reveal_coretop_instance.top_la0_inst_0.tm_u.jtck}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_2 {t:ENCRYPTED} dffr
+d ckid0_2 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtck} jtagconn16 Black box on clock path
+i clk_in
+m 0 0
+u 20 61
+p {p:clk_in}{t:hdmi_i2c_top_inst.clk}{p:hdmi_i2c_top_inst.clk}{t:hdmi_i2c_top_inst.hdmi_i2c_core_inst.clk}{p:hdmi_i2c_top_inst.hdmi_i2c_core_inst.clk}{t:hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3].C}
+e ckid0_3 {t:hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3].C} dff
+c ckid0_3 {p:clk_in} Unconstrained_port Inferred clock from port
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13
+m 0 0
+u 24 24
+n ckid0_4 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].C} Clock source is invalid for GCC
+p {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT}{t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].C}
+e ckid0_4 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].C} lat
+d ckid0_4 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT} or Clock source is invalid for GCC
+i w_pixdata[35]
+m 0 0
+u 0 0
+d ckid0_5 {t:u_colorbar_gen.data[35]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_colorbar_gen.pix_rgb[24]
+m 0 0
+u 0 0
+d ckid0_6 {t:u_colorbar_gen.pix_rgb[24].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i u_pll_sensor_clk.CLKOP_i
+m 0 0
+u 0 0
+d ckid0_7 {t:u_pll_sensor_clk.PLLInst_0.CLKOP} EHXPLLL Black box on clock path
+i w_pixdata[34]
+m 0 0
+u 0 0
+d ckid0_8 {t:u_colorbar_gen.data[34]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[33]
+m 0 0
+u 0 0
+d ckid0_9 {t:u_colorbar_gen.data[33]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[32]
+m 0 0
+u 0 0
+d ckid0_10 {t:u_colorbar_gen.data[32]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[31]
+m 0 0
+u 0 0
+d ckid0_11 {t:u_colorbar_gen.data[31]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[30]
+m 0 0
+u 0 0
+d ckid0_12 {t:u_colorbar_gen.data[30]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[29]
+m 0 0
+u 0 0
+d ckid0_13 {t:u_colorbar_gen.data[29]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[28]
+m 0 0
+u 0 0
+d ckid0_14 {t:u_colorbar_gen.data[28]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[27]
+m 0 0
+u 0 0
+d ckid0_15 {t:u_colorbar_gen.data[27]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[26]
+m 0 0
+u 0 0
+d ckid0_16 {t:u_colorbar_gen.data[26]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[25]
+m 0 0
+u 0 0
+d ckid0_17 {t:u_colorbar_gen.data[25]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[24]
+m 0 0
+u 0 0
+d ckid0_18 {t:u_colorbar_gen.data[24]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[23]
+m 0 0
+u 0 0
+d ckid0_19 {t:u_colorbar_gen.data[23]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_colorbar_gen.pix_rgb[12]
+m 0 0
+u 0 0
+d ckid0_20 {t:u_colorbar_gen.pix_rgb[12].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_pixdata[22]
+m 0 0
+u 0 0
+d ckid0_21 {t:u_colorbar_gen.data[22]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[21]
+m 0 0
+u 0 0
+d ckid0_22 {t:u_colorbar_gen.data[21]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[20]
+m 0 0
+u 0 0
+d ckid0_23 {t:u_colorbar_gen.data[20]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[19]
+m 0 0
+u 0 0
+d ckid0_24 {t:u_colorbar_gen.data[19]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[18]
+m 0 0
+u 0 0
+d ckid0_25 {t:u_colorbar_gen.data[18]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[17]
+m 0 0
+u 0 0
+d ckid0_26 {t:u_colorbar_gen.data[17]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[16]
+m 0 0
+u 0 0
+d ckid0_27 {t:u_colorbar_gen.data[16]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[15]
+m 0 0
+u 0 0
+d ckid0_28 {t:u_colorbar_gen.data[15]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[14]
+m 0 0
+u 0 0
+d ckid0_29 {t:u_colorbar_gen.data[14]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[13]
+m 0 0
+u 0 0
+d ckid0_30 {t:u_colorbar_gen.data[13]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[12]
+m 0 0
+u 0 0
+d ckid0_31 {t:u_colorbar_gen.data[12]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[11]
+m 0 0
+u 0 0
+d ckid0_32 {t:u_colorbar_gen.data[11]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_colorbar_gen.pix_rgb[0]
+m 0 0
+u 0 0
+d ckid0_33 {t:u_colorbar_gen.pix_rgb[0].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_pixdata[10]
+m 0 0
+u 0 0
+d ckid0_34 {t:u_colorbar_gen.data[10]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[8]
+m 0 0
+u 0 0
+d ckid0_35 {t:u_colorbar_gen.data[8]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[7]
+m 0 0
+u 0 0
+d ckid0_36 {t:u_colorbar_gen.data[7]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[6]
+m 0 0
+u 0 0
+d ckid0_37 {t:u_colorbar_gen.data[6]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[5]
+m 0 0
+u 0 0
+d ckid0_38 {t:u_colorbar_gen.data[5]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[4]
+m 0 0
+u 0 0
+d ckid0_39 {t:u_colorbar_gen.data[4]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[3]
+m 0 0
+u 0 0
+d ckid0_40 {t:u_colorbar_gen.data[3]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[2]
+m 0 0
+u 0 0
+d ckid0_41 {t:u_colorbar_gen.data[2]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[1]
+m 0 0
+u 0 0
+d ckid0_42 {t:u_colorbar_gen.data[1]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[0]
+m 0 0
+u 0 0
+d ckid0_43 {t:u_colorbar_gen.data[0]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[9]
+m 0 0
+u 0 0
+d ckid0_44 {t:u_colorbar_gen.data[9]} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_lv
+m 0 0
+u 0 0
+d ckid0_45 {t:u_colorbar_gen.hsync} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_colorbar_gen.hsync
+m 0 0
+u 0 0
+d ckid0_46 {t:u_colorbar_gen.hsync.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_fv
+m 0 0
+u 0 0
+d ckid0_47 {t:u_colorbar_gen.vsync} colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_colorbar_gen.vsync
+m 0 0
+u 0 0
+d ckid0_48 {t:u_colorbar_gen.vsync.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i top_reveal_coretop_instance.ip_enable[0]
+m 0 0
+u 0 0
+d ckid0_49 {t:top_reveal_coretop_instance.jtagconn16_inst_0.ip_enable} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jshift[0]
+m 0 0
+u 0 0
+d ckid0_50 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jshift} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jtdi[0]
+m 0 0
+u 0 0
+d ckid0_51 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtdi} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jce2[0]
+m 0 0
+u 0 0
+d ckid0_52 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jce2} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jrstn[0]
+m 0 0
+u 0 0
+d ckid0_53 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jrstn} jtagconn16 Black box on clock path
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11]
+m 0 0
+u 0 0
+d ckid0_54 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[11]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[10]
+m 0 0
+u 0 0
+d ckid0_55 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[10]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[9]
+m 0 0
+u 0 0
+d ckid0_56 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[9]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[8]
+m 0 0
+u 0 0
+d ckid0_57 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[8]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[7]
+m 0 0
+u 0 0
+d ckid0_58 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[7]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[6]
+m 0 0
+u 0 0
+d ckid0_59 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[6]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[5]
+m 0 0
+u 0 0
+d ckid0_60 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[5]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[0]
+m 0 0
+u 0 0
+d ckid0_61 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[4]
+m 0 0
+u 0 0
+d ckid0_62 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[4]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[3]
+m 0 0
+u 0 0
+d ckid0_63 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[3]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[2]
+m 0 0
+u 0 0
+d ckid0_64 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[2]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[1]
+m 0 0
+u 0 0
+d ckid0_65 {t:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0].Q[1]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+l 0 0 0 0 0

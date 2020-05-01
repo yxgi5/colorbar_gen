@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/VCC</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/GND</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tcnt[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3]</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_0[3]</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_0[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_1[3]</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trig_u/rd_dout_tu_1[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/VCC</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/VCC</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/GND</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/GND</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/trace_dout_1st_bit</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/trace_dout_1st_bit</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>top_reveal_coretop_instance/top_la0_inst_0/ren_jtck</Dynamic>
+            <Navigation>top_reveal_coretop_instance/top_la0_inst_0/ren_jtck</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>hdmi_i2c_top_inst/VCC</Dynamic>
+            <Navigation>hdmi_i2c_top_inst/VCC</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>hdmi_i2c_top_inst/config_done</Dynamic>
+            <Navigation>hdmi_i2c_top_inst/config_done</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>hdmi_i2c_top_inst/GND</Dynamic>
+            <Navigation>hdmi_i2c_top_inst/GND</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_colorbar_gen/rstn_cnt_s_0_COUT[7]</Dynamic>
+            <Navigation>u_colorbar_gen/rstn_cnt_s_0_COUT[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_colorbar_gen/rstn_cnt_s[7]</Dynamic>
+            <Navigation>u_colorbar_gen/rstn_cnt_s[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u_colorbar_gen/rstn_cnt_s_0_S1[7]</Dynamic>
+            <Navigation>u_colorbar_gen/rstn_cnt_s_0_S1[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>sa5phub/tdoa</Dynamic>
+            <Navigation>sa5phub/tdoa</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>sa5phub/cdn</Dynamic>
+            <Navigation>sa5phub/cdn</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>sa5phub/ip_enable[15]</Dynamic>
+            <Navigation>sa5phub/ip_enable[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>sa5phub/genblk8.un1_jtagg_u_1</Dynamic>
+            <Navigation>sa5phub/genblk8.un1_jtagg_u_1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>sa5phub/genblk8.un1_jtagg_u</Dynamic>
+            <Navigation>sa5phub/genblk8.un1_jtagg_u</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>21</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2120344</ID>
+            <Severity>Info</Severity>
+            <Dynamic>3</Dynamic>
+        </Message>
+        <Message>
+            <ID>2120346</ID>
+            <Severity>Info</Severity>
+            <Dynamic>6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/top.v(22): </Dynamic>
+            <Dynamic>de</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/top.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/top.v(1): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/top.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/top.v(94): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/top.v</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v(80): </Dynamic>
+            <Dynamic>pll_sensor_clk_uniq_1</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v(160): </Dynamic>
+            <Dynamic>colorbar_gen_uniq_1</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v</Navigation>
+            <Navigation>160</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_top.v(67): </Dynamic>
+            <Dynamic>hdmi_i2c_top_uniq_1</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_top.v</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v(96): </Dynamic>
+            <Dynamic>hdmi_i2c_ctrl_uniq_1</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v</Navigation>
+            <Navigation>96</Navigation>
+        </Message>
+        <Message>
+            <ID>35909000</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_core.v(385): </Dynamic>
+            <Dynamic>hdmi_i2c_core_uniq_1</Dynamic>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_core.v</Navigation>
+            <Navigation>385</Navigation>
+        </Message>
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:344:11:344:21|Net i2c_data_rd is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>344</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>344</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Net i2c_data_rd is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:594:11:594:16|Net scl_in is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>594</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>594</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Net scl_in is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:595:11:595:16|Net sda_in is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>595</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>595</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Net sda_in is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:677:11:677:21|Net i2c_rqt_pos is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>677</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>677</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Net i2c_rqt_pos is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:699:11:699:20|Net timer_125u is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>699</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>699</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Net timer_125u is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1294:11:1294:21|Net i2c_data_rd is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1294</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1294</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Net i2c_data_rd is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1544:11:1544:16|Net scl_in is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1544</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1544</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Net scl_in is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1545:11:1545:16|Net sda_in is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1545</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1545</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Net sda_in is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1627:11:1627:21|Net i2c_rqt_pos is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1627</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1627</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Net i2c_rqt_pos is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG1337 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1649:11:1649:20|Net timer_125u is not declared.</Dynamic>
+            <Navigation>CG1337</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1649</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1649</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Net timer_125u is not declared.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1079:8:1079:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1079</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>1079</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1226:4:1226:9|Pruning unused register ative_line_cnt[11:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1226</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1226</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register ative_line_cnt[11:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1158:4:1158:9|Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register fv_cnt[10:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1158:4:1158:9|Pruning unused register q_fv. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register q_fv. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1315:21:1315:30|Object addr_reg_L is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1315</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>1315</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>Object addr_reg_L is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1317:21:1317:29|Object data_wr_L is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1317</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>1317</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>Object data_wr_L is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|Latch generated from always block for signal data_wr_H[7:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Latch generated from always block for signal data_wr_H[7:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|Latch generated from always block for signal addr_reg_H[7:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Latch generated from always block for signal addr_reg_H[7:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|Latch generated from always block for signal addr_dev[6:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Latch generated from always block for signal addr_dev[6:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|Latch generated from always block for signal cmd; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Latch generated from always block for signal cmd; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1712:4:1712:9|Pruning unused register data_wr_tmp[7:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1712</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1712</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register data_wr_tmp[7:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1564:4:1564:9|Pruning unused register cnt_byte[3:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1564</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1564</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register cnt_byte[3:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:9:1164:12|*Output jtck has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>*Output jtck has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:15:1164:18|*Output jtdi has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>*Output jtdi has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:21:1164:26|*Output jshift has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>*Output jshift has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:29:1164:35|*Output jupdate has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>*Output jupdate has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:38:1164:42|*Output jrstn has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>*Output jrstn has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:45:1164:48|*Output jce2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>*Output jce2 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v&quot;:1164:51:1164:59|*Output ip_enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>1164</Navigation>
+            <Navigation>59</Navigation>
+            <Navigation>*Output ip_enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:15:29:15:39|Removing wire trigger_out, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>Removing wire trigger_out, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:63:11:63:14|Removing wire test, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Removing wire test, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:65:9:65:14|Removing wire clk24M, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Removing wire clk24M, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:63:11:63:14|*Output test has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>*Output test has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:65:9:65:14|*Input clk24M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>*Input clk24M to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1629:4:1629:9|Optimizing register bit cnt_1bit[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit cnt_1bit[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1629:4:1629:9|Optimizing register bit cnt_1bit[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit cnt_1bit[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1629:4:1629:9|Pruning register bits 9 to 8 of cnt_1bit[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1629</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 9 to 8 of cnt_1bit[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1718:4:1718:9|Optimizing register bit data_rdy to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1718</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1718</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rdy to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Optimizing register bit data_rd[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit data_rd[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1731:4:1731:9|Pruning unused register data_rd[7:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1731</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register data_rd[7:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1718:4:1718:9|Pruning unused register data_rdy. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1718</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1718</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register data_rdy. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1158:4:1158:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1158:4:1158:9|Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1233:4:1233:9|Pruning register bits 35 to 25 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 35 to 25 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1233:4:1233:9|Pruning register bits 23 to 13 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 23 to 13 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1233:4:1233:9|Pruning register bits 11 to 1 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1233</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 11 to 1 of pix_rgb[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|Found signal identified as System clock which controls 24 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Found signal identified as System clock which controls 24 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1158:4:1158:9|Found inferred clock pll_sensor_clk_uniq_1|CLKOP_inferred_clock which controls 318 sequential elements including u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1158</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock pll_sensor_clk_uniq_1|CLKOP_inferred_clock which controls 318 sequential elements including u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1332:4:1332:9|Found inferred clock top|clk_in which controls 61 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock top|clk_in which controls 61 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|ROM addr_reg_H_1[4:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>ROM addr_reg_H_1[4:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|ROM data_wr_H_1[7:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>ROM data_wr_H_1[7:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|ROM addr_reg_H_1[4:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>ROM addr_reg_H_1[4:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1360:12:1360:15|ROM data_wr_H_1[7:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1360</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>ROM data_wr_H_1[7:0] (in view: work.hdmi_i2c_ctrl_uniq_1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX528 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1332:4:1332:9|Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Dynamic>
+            <Navigation>FX528</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX528 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1332:4:1332:9|Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Dynamic>
+            <Navigation>FX528</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX528 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1332:4:1332:9|Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Dynamic>
+            <Navigation>FX528</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX528 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1332:4:1332:9|Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Dynamic>
+            <Navigation>FX528</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1332</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found syn_preserve on register step_cnt[0] which prevents the register from being packed into DSP</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO161 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1152:4:1152:9|Register bit u_colorbar_gen.rstn_cnt[7] (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>MO161</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1152</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>1152</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Register bit u_colorbar_gen.rstn_cnt[7] (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:1113:12:1113:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>1113</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>1113</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v&quot;:44:15:44:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/home/andy/Downloads/tmp/colorbar_gen/colorbar/reveal_workspace/tmpreveal/top_rvl.v</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v&quot;:1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v</Navigation>
+            <Navigation>1192</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>1192</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v&quot;:1161:8:1161:21|Blackbox pmi_distributed_dpram_8s_3s_2s_reg_none_binary_ECP5UM_pmi_distributed_dpram_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v</Navigation>
+            <Navigation>1161</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>1161</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Blackbox pmi_distributed_dpram_8s_3s_2s_reg_none_binary_ECP5UM_pmi_distributed_dpram_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v&quot;:2162:8:2162:13|Blackbox pmi_ram_dp_Z6 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v</Navigation>
+            <Navigation>2162</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2162</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>Blackbox pmi_ram_dp_Z6 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock pll_sensor_clk_uniq_1|CLKOP_inferred_clock with period 10.00ns. Please declare a user-defined clock on net u_pll_sensor_clk.CLKOP.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pll_sensor_clk_uniq_1|CLKOP_inferred_clock with period 10.00ns. Please declare a user-defined clock on net u_pll_sensor_clk.CLKOP.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on net top_reveal_coretop_instance.jtck[0].</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on net top_reveal_coretop_instance.jtck[0].</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock top|clk_in with period 10.00ns. Please declare a user-defined clock on port clk_in.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock top|clk_in with period 10.00ns. Please declare a user-defined clock on port clk_in.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

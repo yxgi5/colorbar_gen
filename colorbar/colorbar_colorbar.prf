@@ -1,0 +1,91 @@
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.11.0.396.4 -- WARNING: Map write only section -- Sun Apr 26 13:20:42 2020
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
+LOCATE COMP "pixdata[0]" SITE "T31" ;
+LOCATE COMP "clk_in" SITE "E17" ;
+LOCATE COMP "HDMI_sda" SITE "AJ1" ;
+LOCATE COMP "HDMI_scl" SITE "AG1" ;
+LOCATE COMP "de" SITE "C25" ;
+LOCATE COMP "pixclk" SITE "E25" ;
+LOCATE COMP "lv" SITE "D25" ;
+LOCATE COMP "fv" SITE "A25" ;
+LOCATE COMP "pixdata[35]" SITE "F17" ;
+LOCATE COMP "pixdata[34]" SITE "F25" ;
+LOCATE COMP "pixdata[33]" SITE "W28" ;
+LOCATE COMP "pixdata[32]" SITE "D24" ;
+LOCATE COMP "pixdata[31]" SITE "Y27" ;
+LOCATE COMP "pixdata[30]" SITE "AC26" ;
+LOCATE COMP "pixdata[29]" SITE "AB27" ;
+LOCATE COMP "pixdata[28]" SITE "AB28" ;
+LOCATE COMP "pixdata[27]" SITE "AB30" ;
+LOCATE COMP "pixdata[26]" SITE "AB29" ;
+LOCATE COMP "pixdata[25]" SITE "AD27" ;
+LOCATE COMP "pixdata[24]" SITE "AE27" ;
+LOCATE COMP "pixdata[23]" SITE "T30" ;
+LOCATE COMP "pixdata[22]" SITE "W30" ;
+LOCATE COMP "pixdata[21]" SITE "Y26" ;
+LOCATE COMP "pixdata[20]" SITE "W32" ;
+LOCATE COMP "pixdata[19]" SITE "V32" ;
+LOCATE COMP "pixdata[18]" SITE "AB31" ;
+LOCATE COMP "pixdata[17]" SITE "AC30" ;
+LOCATE COMP "pixdata[16]" SITE "T32" ;
+LOCATE COMP "pixdata[15]" SITE "A24" ;
+LOCATE COMP "pixdata[14]" SITE "R26" ;
+LOCATE COMP "pixdata[13]" SITE "T26" ;
+LOCATE COMP "pixdata[12]" SITE "AD26" ;
+LOCATE COMP "pixdata[11]" SITE "AD32" ;
+LOCATE COMP "pixdata[10]" SITE "AC32" ;
+LOCATE COMP "pixdata[9]" SITE "AB32" ;
+LOCATE COMP "pixdata[8]" SITE "AC31" ;
+LOCATE COMP "pixdata[7]" SITE "V26" ;
+LOCATE COMP "pixdata[6]" SITE "V27" ;
+LOCATE COMP "pixdata[5]" SITE "U28" ;
+LOCATE COMP "pixdata[4]" SITE "T29" ;
+LOCATE COMP "pixdata[3]" SITE "W31" ;
+LOCATE COMP "pixdata[2]" SITE "Y32" ;
+LOCATE COMP "pixdata[1]" SITE "R32" ;
+FREQUENCY NET "w_pixclk" 148.500000 MHz ;
+FREQUENCY NET "u_pll_sensor_clk/GND" 27.000000 MHz ;
+USE PRIMARY NET "w_pixclk" ;
+FREQUENCY PORT "clk_in" 27.000000 MHz ;
+SCHEMATIC END ;
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+RVL_ALIAS "w_pixclk" "w_pixclk"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+DEFINE PORT GROUP "vout" "pixdata[23]" 
+"pixdata[22]" 
+"pixdata[21]" 
+"pixdata[20]" 
+"pixdata[19]" 
+"pixdata[18]" 
+"pixdata[17]" 
+"pixdata[16]" 
+"pixdata[15]" 
+"pixdata[14]" 
+"pixdata[13]" 
+"pixdata[12]" 
+"pixdata[11]" 
+"pixdata[10]" 
+"pixdata[9]" 
+"pixdata[8]" 
+"pixdata[7]" 
+"pixdata[6]" 
+"pixdata[5]" 
+"pixdata[4]" 
+"pixdata[3]" 
+"pixdata[2]" 
+"pixdata[1]" 
+"pixdata[0]" 
+"fv" 
+"lv" 
+"de" ;
+COMMERCIAL ;

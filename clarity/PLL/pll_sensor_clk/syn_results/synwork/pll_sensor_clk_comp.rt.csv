@@ -1,0 +1,5 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, pll_sensor_clk, 0h:00m:00s,     75 MB
+work, EHXPLLL, 0h:00m:00s,     75 MB
+work, VLO, 0h:00m:00s,     75 MB
+work, VHI, 0h:00m:00s,     75 MB

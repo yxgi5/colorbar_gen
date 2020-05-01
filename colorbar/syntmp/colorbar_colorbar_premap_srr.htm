@@ -1,0 +1,152 @@
+<html><body><samp><pre>
+<!@TC:1587719735>
+# Fri Apr 24 17:15:35 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: /opt/lscc/diamond/3.11_x64/synpbase
+OS: Debian GNU/Linux 8 (jessie)
+Hostname: debian-dell
+
+Implementation : colorbar
+<a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:24:52</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1587719735> | No constraint file specified. 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1587719735> | Setting synthesis effort to medium for the design 
+Linked File:  <a href="/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar_scck.rpt:@XP_FILE">colorbar_colorbar_scck.rpt</a>
+Printing clock  summary report in "/home/andy/Downloads/tmp/colorbar_gen/colorbar/colorbar_colorbar_scck.rpt" file 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1587719735> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1587719735> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1587719735> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1587719735> | Setting synthesis effort to medium for the design 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1587719735> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1587719735> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/top.v:16:8:16:12:@N:MO111:@XP_MSG">top.v(16)</a><!@TM:1587719735> | Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v:45:0:45:6:@N:BN362:@XP_MSG">colorbar_gen.v(45)</a><!@TM:1587719735> | Removing sequential instance fv (in view: work.colorbar_gen_1920_2200_1080_1125_88_44_148_4_5_0s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v:135:0:135:6:@N:BN362:@XP_MSG">colorbar_gen.v(135)</a><!@TM:1587719735> | Removing sequential instance pix_rgb[24] (in view: work.colorbar_gen_1920_2200_1080_1125_88_44_148_4_5_0s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine i2c_cs[11:0] (in view: work.hdmi_i2c_core(verilog))
+original code -> new code
+   000001 -> 0000
+   000010 -> 0001
+   000011 -> 0010
+   000100 -> 0011
+   000101 -> 0100
+   000110 -> 0101
+   001001 -> 0110
+   001010 -> 0111
+   010111 -> 1000
+   011000 -> 1001
+   011001 -> 1010
+   011010 -> 1011
+syn_allowed_resources : blockrams=208  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+
+<a name=mapperReport6></a>Clock Summary</a>
+******************
+
+          Start                                   Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                   Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------
+0 -       System                                  100.0 MHz     10.000        system       system_clkgroup         24   
+                                                                                                                        
+0 -       top|clk_in                              100.0 MHz     10.000        inferred     Inferred_clkgroup_0     61   
+                                                                                                                        
+0 -       pll_sensor_clk|CLKOP_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     49   
+========================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                        Clock     Source                                        Clock Pin                                         Non-clock Pin     Non-clock Pin
+Clock                                   Load      Pin                                           Seq Example                                       Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                  24        -                                             hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.cmd.C        -                 -            
+                                                                                                                                                                                 
+top|clk_in                              61        clk_in(port)                                  hdmi_i2c_top_inst.hdmi_i2c_core_inst.scl_s2.C     -                 -            
+                                                                                                                                                                                 
+pll_sensor_clk|CLKOP_inferred_clock     49        u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLL)     u_colorbar_gen.rstn_cnt[7:0].C                    -                 -            
+=================================================================================================================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT531:@XP_HELP">MT531</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v:68:9:68:13:@W:MT531:@XP_MSG">hdmi_i2c_ctrl.v(68)</a><!@TM:1587719735> | Found signal identified as System clock which controls 24 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/hdmi_i2c_ctrl.v:48:3:48:9:@W:MT529:@XP_MSG">hdmi_i2c_ctrl.v(48)</a><!@TM:1587719735> | Found inferred clock top|clk_in which controls 61 sequential elements including hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.step_cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/andy/Downloads/tmp/colorbar_gen/colorbar_gen.v:45:0:45:6:@W:MT529:@XP_MSG">colorbar_gen.v(45)</a><!@TM:1587719735> | Found inferred clock pll_sensor_clk|CLKOP_inferred_clock which controls 49 sequential elements including u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+<a name=clockReport7></a>#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[</a>
+
+1 non-gated/non-generated clock tree(s) driving 61 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 73 clock pin(s) of sequential element(s)
+0 instances converted, 73 sequential instances remain driven by gated/generated clocks
+
+=========================================== Non-Gated/Non-Generated Clocks ===========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                               
+----------------------------------------------------------------------------------------------------------------------
+<a href="@|L:/home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_prem.srm@|S:clk_in@|E:hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0 @XP_NAMES_BY_PROP">ClockId_0_0</a>       clk_in              Unconstrained_port     61         hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3]
+======================================================================================================================
+============================================================================================ Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                              Drive Element Type     Unconverted Fanout     Sample Instance                                      Explanation                    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<a href="@|L:/home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_prem.srm@|S:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT@|E:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1 @XP_NAMES_BY_PROP">ClockId_0_1</a>       hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT     or                     24                     hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6]     Clock source is invalid for GCC
+<a href="@|L:/home/andy/Downloads/tmp/colorbar_gen/colorbar/synwork/colorbar_colorbar_prem.srm@|S:u_pll_sensor_clk.PLLInst_0.CLKOP@|E:u_colorbar_gen.linecnt[10:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2 @XP_NAMES_BY_PROP">ClockId_0_2</a>       u_pll_sensor_clk.PLLInst_0.CLKOP                             EHXPLLL                49                     u_colorbar_gen.linecnt[10:0]                         Black box on clock path        
+=================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1587719735> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 24 17:15:35 2020
+
+###########################################################]
+
+</pre></samp></body></html>

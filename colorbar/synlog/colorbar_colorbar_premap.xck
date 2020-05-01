@@ -1,0 +1,4 @@
+ckid0_1:@|S:u_pll_sensor_clk.CLKOP@|E:pixdata[35:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:top_reveal_coretop_instance.jtagconn16_inst_0.jtck@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:clk_in@|E:hdmi_i2c_top_inst.hdmi_i2c_core_inst.i2c_cs[3]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.un1_step_cnt_13.OUT@|E:hdmi_i2c_top_inst.hdmi_i2c_ctrl_inst.addr_dev[6]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4

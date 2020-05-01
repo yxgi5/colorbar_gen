@@ -1,0 +1,82 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Wed Apr 22 13:48:16 2020</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="1"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LCMXO3LF-9400C</DeviceName>
+  <DeviceID>0x612BE043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>test.rvl</RVLFileName>
+  <RVSFileName>test.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="fv" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="lv" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="pixdata" NodeType="1" PortIndex="2">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="true"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="pixdata:0" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="pixdata:1" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="pixdata:2" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="pixdata:3" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="pixdata:4" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="pixdata:5" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="pixdata:6" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="pixdata:7" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="pixdata:8" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="pixdata:9" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="pixclk" NodeType="0" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb" NodeType="1" PortIndex="13">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:0" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:1" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:2" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:3" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:4" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:5" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:6" NodeType="2" PortIndex="19"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:7" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:8" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:9" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:10" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:11" NodeType="2" PortIndex="24"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:12" NodeType="2" PortIndex="25"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:13" NodeType="2" PortIndex="26"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:14" NodeType="2" PortIndex="27"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:15" NodeType="2" PortIndex="28"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:16" NodeType="2" PortIndex="29"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:17" NodeType="2" PortIndex="30"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:18" NodeType="2" PortIndex="31"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:19" NodeType="2" PortIndex="32"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:20" NodeType="2" PortIndex="33"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:21" NodeType="2" PortIndex="34"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:22" NodeType="2" PortIndex="35"/>
+    <TraceSignal IsHidden="false" Name="u_raw_colorbar_gen/pix_rgb:23" NodeType="2" PortIndex="36"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>
